@@ -16,6 +16,10 @@ type Project = {
   imageSrc: string;
 };
 
+type ProjectWithGallery = Project & {
+  galleryImages: string[];
+};
+
 type SectionLink = {
   href: string;
   label: string;
@@ -96,7 +100,7 @@ const content: Record<Locale, Content> = {
     heroText:
       "Milan Milojevic designs private residences and residential concepts across the region, balancing contemporary expression with practical, long-term livability.",
     featuredProjectLabel: "Featured project",
-    featuredProjectCta: "View case study",
+    featuredProjectCta: "Open gallery",
     stats: [
       { value: "15+", label: "residential concepts and design studies" },
       { value: "7", label: "years of architectural design and delivery" },
@@ -205,8 +209,69 @@ const content: Record<Locale, Content> = {
           "Contemporary housing concept developed through warmer tones and layered facade articulation.",
         imageSrc: "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.png",
       },
+      {
+        slug: "stambena-zgrada-zlatibor-5",
+        title: "Stambena Zgrada Zlatibor V",
+        type: "Residential Building",
+        year: "2025",
+        location: "Zlatibor, Serbia",
+        description:
+          "A fresh facade study exploring rhythm, texture, and larger glazed openings for contemporary mountain housing.",
+        imageSrc: "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.png",
+      },
+      {
+        slug: "vila-zlatibor",
+        title: "Vila Zlatibor",
+        type: "Villa Concept",
+        year: "2025",
+        location: "Zlatibor, Serbia",
+        description:
+          "A villa concept shaped around expanded outdoor living zones and stronger visual connection to the landscape.",
+        imageSrc: "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.png",
+      },
+      {
+        slug: "stambeni-objekt-gorni-milanovac",
+        title: "Stambeni Objekt Gornji Milanovac",
+        type: "Residential Building",
+        year: "2025",
+        location: "Gornji Milanovac, Serbia",
+        description:
+          "A multi-family concept focused on practical apartment layouts, daylight, and balanced facade articulation.",
+        imageSrc: "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.png",
+      },
+      {
+        slug: "stambena-zgrada-cacak",
+        title: "Stambena Zgrada Cacak",
+        type: "Residential Building",
+        year: "2025",
+        location: "Cacak, Serbia",
+        description:
+          "An urban residential scheme with clear floorplate logic and a facade system tuned to neighborhood scale.",
+        imageSrc: "/images/stambenaZgradaCacak/ANTI%C4%86%2001.png",
+      },
+      {
+        slug: "stambena-kuca-cacak",
+        title: "Stambena Kuca Cacak",
+        type: "Family House",
+        year: "2025",
+        location: "Cacak, Serbia",
+        description:
+          "A contemporary house proposal combining compact planning, generous openings, and layered outdoor thresholds.",
+        imageSrc: "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.png",
+      },
+      {
+        slug: "rekonstrukcija-bazena-lucani",
+        title: "Rekonstrukcija Bazena Lucani",
+        type: "Public Renovation",
+        year: "2024",
+        location: "Lucani, Serbia",
+        description:
+          "Renovation and upgrade proposal for a pool complex with improved circulation, usability, and visual identity.",
+        imageSrc:
+          "/images/rekonstrukcijaBazenaLucani/0-02-05-1811798fd8d5d069dd70f877e60c7ec9fa6c2f011c273f47229f10a90ffd936f_51e1b7a5ced5fcb9.jpg",
+      },
     ],
-    openProjectLabel: "Open case study",
+    openProjectLabel: "Open gallery",
     processLabel: "Process",
     processTitle: "A disciplined workflow from briefing to documentation.",
     processSteps: [
@@ -244,7 +309,7 @@ const content: Record<Locale, Content> = {
     contactPhone: "+381 60 111 222",
     contactPhoneHref: "+38160111222",
     contactCityLabel: "Studio base",
-    contactCity: "Skopje / Belgrade",
+    contactCity: "Cacak / Belgrade",
     availabilityLabel: "Availability",
     availabilityText: "Open for new projects and early-stage consultations.",
     footer: "Milan Milojevic Architecture. Residential design and interior architecture.",
@@ -266,7 +331,7 @@ const content: Record<Locale, Content> = {
     heroText:
       "Milan Milojevic projektuje privatne kuce i stambene koncepte u regionu, povezujuci savremen izraz sa funkcionalnim i dugorocno kvalitetnim prostorom.",
     featuredProjectLabel: "Izdvojeni projekat",
-    featuredProjectCta: "Otvori case study",
+    featuredProjectCta: "Otvori galeriju",
     stats: [
       { value: "15+", label: "stambenih koncepata i projektnih studija" },
       { value: "7", label: "godina rada na projektovanju i realizaciji" },
@@ -375,8 +440,69 @@ const content: Record<Locale, Content> = {
           "Savremeni stambeni pristup sa toplijim tonovima i slojevitom artikulacijom fasade.",
         imageSrc: "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.png",
       },
+      {
+        slug: "stambena-zgrada-zlatibor-5",
+        title: "Stambena Zgrada Zlatibor V",
+        type: "Stambena zgrada",
+        year: "2025",
+        location: "Zlatibor, Srbija",
+        description:
+          "Nova studija fasade sa jacim ritmom, teksturom i vecim otvorima za savremeni planinski kontekst.",
+        imageSrc: "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.png",
+      },
+      {
+        slug: "vila-zlatibor",
+        title: "Vila Zlatibor",
+        type: "Vila",
+        year: "2025",
+        location: "Zlatibor, Srbija",
+        description:
+          "Koncept vile oblikovan kroz prostranije spoljne zone i snazniju vezu enterijera sa pejzazom.",
+        imageSrc: "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.png",
+      },
+      {
+        slug: "stambeni-objekt-gorni-milanovac",
+        title: "Stambeni Objekt Gornji Milanovac",
+        type: "Stambeni objekt",
+        year: "2025",
+        location: "Gornji Milanovac, Srbija",
+        description:
+          "Viseporodicni koncept sa racionalnom organizacijom stanova, kvalitetnim osvetljenjem i uravnotezenom fasadom.",
+        imageSrc: "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.png",
+      },
+      {
+        slug: "stambena-zgrada-cacak",
+        title: "Stambena Zgrada Cacak",
+        type: "Stambena zgrada",
+        year: "2025",
+        location: "Cacak, Srbija",
+        description:
+          "Urbani stambeni koncept sa jasnom logikom osnove i fasadnim sistemom prilagodjenim merilu okoline.",
+        imageSrc: "/images/stambenaZgradaCacak/ANTI%C4%86%2001.png",
+      },
+      {
+        slug: "stambena-kuca-cacak",
+        title: "Stambena Kuca Cacak",
+        type: "Porodicna kuca",
+        year: "2025",
+        location: "Cacak, Srbija",
+        description:
+          "Savremeni predlog kuce koji spaja kompaktnu organizaciju, velike otvore i slojevite spoljne pragove.",
+        imageSrc: "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.png",
+      },
+      {
+        slug: "rekonstrukcija-bazena-lucani",
+        title: "Rekonstrukcija Bazena Lucani",
+        type: "Javna rekonstrukcija",
+        year: "2024",
+        location: "Lucani, Srbija",
+        description:
+          "Predlog rekonstrukcije bazenskog kompleksa sa unapredjenom funkcijom, kretanjem i vizuelnim identitetom.",
+        imageSrc:
+          "/images/rekonstrukcijaBazenaLucani/0-02-05-1811798fd8d5d069dd70f877e60c7ec9fa6c2f011c273f47229f10a90ffd936f_51e1b7a5ced5fcb9.jpg",
+      },
     ],
-    openProjectLabel: "Otvori case study",
+    openProjectLabel: "Otvori galeriju",
     processLabel: "Proces",
     processTitle: "Disciplinisan tok rada od zadatka do tehnicke dokumentacije.",
     processSteps: [
@@ -414,7 +540,7 @@ const content: Record<Locale, Content> = {
     contactPhone: "+381 60 111 222",
     contactPhoneHref: "+38160111222",
     contactCityLabel: "Baza studija",
-    contactCity: "Skoplje / Beograd",
+    contactCity: "Cacak / Beograd",
     availabilityLabel: "Dostupnost",
     availabilityText: "Otvoren za nove projekte i koncept konsultacije.",
     footer: "Milan Milojevic Arhitektura. Stambeni projekti i enterijerska arhitektura.",
@@ -424,6 +550,112 @@ const content: Record<Locale, Content> = {
 const languageLabels: Record<Locale, string> = {
   en: "English",
   sr: "Srpski",
+};
+
+const projectGalleryBySlug: Record<string, string[]> = {
+  "villa-beti": [
+    "/images/kucaPrva/1.jpg",
+    "/images/kucaPrva/2.jpg",
+    "/images/kucaPrva/3.jpg",
+    "/images/kucaPrva/4.jpg",
+    "/images/kucaPrva/5.jpg",
+    "/images/kucaPrva/6.jpg",
+    "/images/kucaPrva/STTGU1gX.jpg",
+  ],
+  "courtyard-house": [
+    "/images/stambenaZgradaUzice/001.jpg",
+    "/images/stambenaZgradaUzice/002.jpg",
+    "/images/stambenaZgradaUzice/003.jpg",
+    "/images/stambenaZgradaUzice/004.jpg",
+  ],
+  "studio-terrace": [
+    "/images/stambenaZgradaZlatibor/1.jpg",
+    "/images/stambenaZgradaZlatibor/2.jpg",
+    "/images/stambenaZgradaZlatibor/3.jpg",
+    "/images/stambenaZgradaZlatibor/4.jpg",
+    "/images/stambenaZgradaZlatibor/5.jpg",
+    "/images/stambenaZgradaZlatibor/6.jpg",
+  ],
+  "stambena-zgrada-zlatibor-1": [
+    "/images/stambenaZgradaZlatibor1/001.jpg",
+    "/images/stambenaZgradaZlatibor1/002.jpg",
+    "/images/stambenaZgradaZlatibor1/003.jpg",
+    "/images/stambenaZgradaZlatibor1/004.jpg",
+    "/images/stambenaZgradaZlatibor1/005.jpg",
+  ],
+  "stambena-zgrada-zlatibor-2": [
+    "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%281%29.jpg",
+    "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%282%29.jpg",
+    "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%283%29.jpg",
+    "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%284%29.jpg",
+    "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%285%29.jpg",
+    "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%286%29.jpg",
+    "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%287%29.jpg",
+  ],
+  "stambena-zgrada-zlatibor-3": [
+    "/images/stambenaZgradaZlatibor3/001.jpg",
+    "/images/stambenaZgradaZlatibor3/002.jpg",
+    "/images/stambenaZgradaZlatibor3/003.jpg",
+    "/images/stambenaZgradaZlatibor3/004.jpg",
+    "/images/stambenaZgradaZlatibor3/005.jpg",
+  ],
+  "stambena-zgrada-zlatibor-4": [
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.png",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2001.png",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2002.png",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2003.png",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2004.png",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2005.png",
+  ],
+  "stambena-zgrada-zlatibor-5": [
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.png",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_8c0wwj8c0wwj8c0w.png",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_edsbcvedsbcvedsb.png",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_he8xsahe8xsahe8x.png",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_kpcaqkkpcaqkkpca.png",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_pxxmr3pxxmr3pxxm.png",
+  ],
+  "vila-zlatibor": [
+    "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.png",
+    "/images/vilaZlatibor/Gemini_Generated_Image_cef2glcef2glcef2.png",
+    "/images/vilaZlatibor/Gemini_Generated_Image_o8mfewo8mfewo8mf.png",
+    "/images/vilaZlatibor/Gemini_Generated_Image_pt81x4pt81x4pt81.png",
+    "/images/vilaZlatibor/Gemini_Generated_Image_q950nzq950nzq950.png",
+  ],
+  "stambeni-objekt-gorni-milanovac": [
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.png",
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_fivifjfivifjfivi.png",
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_ozrwfmozrwfmozrw.png",
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_v535q1v535q1v535.png",
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_y8wdpqy8wdpqy8wd.png",
+  ],
+  "stambena-zgrada-cacak": [
+    "/images/stambenaZgradaCacak/ANTI%C4%86%2001.png",
+    "/images/stambenaZgradaCacak/ANTI%C4%86%2002.png",
+    "/images/stambenaZgradaCacak/ANTI%C4%86%2003.png",
+    "/images/stambenaZgradaCacak/ANTI%C4%86%2004.png",
+    "/images/stambenaZgradaCacak/Untitled.jpg",
+  ],
+  "stambena-kuca-cacak": [
+    "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.png",
+    "/images/stambenaKucaCacak/Gemini_Generated_Image_bxd98rbxd98rbxd9.png",
+    "/images/stambenaKucaCacak/Gemini_Generated_Image_bynd1nbynd1nbynd.png",
+    "/images/stambenaKucaCacak/Gemini_Generated_Image_zh5i3ozh5i3ozh5i.png",
+    "/images/stambenaKucaCacak/ulazna%20fasada%201.png",
+  ],
+  "rekonstrukcija-bazena-lucani": [
+    "/images/rekonstrukcijaBazenaLucani/0-02-05-1811798fd8d5d069dd70f877e60c7ec9fa6c2f011c273f47229f10a90ffd936f_51e1b7a5ced5fcb9.jpg",
+    "/images/rekonstrukcijaBazenaLucani/0-02-05-3bfb1e8d6b608168354fdb60a6b22c3438adfd371b15805a64a8bb10871c5063_26a7e6478e1403f2.jpg",
+    "/images/rekonstrukcijaBazenaLucani/0-02-05-568385f0e589cb593034d8eb1e0c7f0ebccf4b39312ffbdad34046c2162c3067_48e6b9703826c4bd.jpg",
+    "/images/rekonstrukcijaBazenaLucani/0-02-05-67406253450b62f53d3c6e2d360f6433d13a4be221d582e1714730066777ac96_dc4d2a2366b6fa0b.jpg",
+    "/images/rekonstrukcijaBazenaLucani/0-02-05-758d15b0e59c81baee0e93985f490f1870dbcb29b3c0d865295d085912441722_8348f7368c585ffd.jpg",
+    "/images/rekonstrukcijaBazenaLucani/0-02-05-b8fa1fbd9820ee51fa357406d59284d74d04ff6983f27cb85f180e1272c6a580_bd2a9e6ba89794fb.jpg",
+    "/images/rekonstrukcijaBazenaLucani/0-02-05-d555b14e1d2815eaabb244d694aca1708a9c516414bac2f9d3c6aadef81b2837_d6bf6d75e7bd33eb.jpg",
+    "/images/rekonstrukcijaBazenaLucani/0-02-05-d5d9e24f6091367847b69e0ed6323c68e3dff272310a582e70eb250488959185_8aa482e8e6e94311.jpg",
+    "/images/rekonstrukcijaBazenaLucani/10.jpg",
+    "/images/rekonstrukcijaBazenaLucani/11.jpg",
+    "/images/rekonstrukcijaBazenaLucani/12.jpg",
+  ],
 };
 
 function parseLocale(value: string | string[] | undefined): Locale {
@@ -438,12 +670,32 @@ export default function Home({
 }) {
   const params = use(searchParams);
   const locale = parseLocale(params.lang);
+  const [selectedProject, setSelectedProject] = useState<ProjectWithGallery | null>(
+    null,
+  );
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const t = content[locale];
-  const hasHiddenProjects = t.projects.length > 4;
-  const visibleProjects = showAllProjects ? t.projects : t.projects.slice(0, 4);
-  const featuredProject = t.projects[0];
+  const projectsWithGallery: ProjectWithGallery[] = t.projects.map((project) => ({
+    ...project,
+    galleryImages: projectGalleryBySlug[project.slug] ?? [project.imageSrc],
+  }));
+  const visibleProjects = showAllProjects ? projectsWithGallery : projectsWithGallery.slice(0, 3);
+  const galleryCount = selectedProject?.galleryImages.length ?? 0;
+  const safeActiveImageIndex =
+    galleryCount > 0 ? ((activeImageIndex % galleryCount) + galleryCount) % galleryCount : 0;
+  const activeImageSrc = selectedProject?.galleryImages[safeActiveImageIndex];
+
+  function openGallery(project: ProjectWithGallery) {
+    setSelectedProject(project);
+    setActiveImageIndex(0);
+  }
+
+  function closeGallery() {
+    setSelectedProject(null);
+    setActiveImageIndex(0);
+  }
 
   return (
     <main className="relative overflow-hidden">
@@ -453,7 +705,7 @@ export default function Home({
         <div className="absolute left-[35%] top-[32rem] h-[16rem] w-[16rem] rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.5),_transparent_72%)]" />
       </div>
 
-      <section className="mx-auto flex w-full max-w-[1800px] flex-col px-4 pb-20 pt-6 sm:px-6 lg:px-10 2xl:px-12">
+      <section className="mx-auto flex w-full max-w-[1800px] flex-col pb-20 sm:px-6 lg:px-10 2xl:px-12">
         <header className="sticky top-0 z-30 -mx-4 mb-4 border-b border-black/8 bg-[rgba(246,241,234,0.78)] px-4 py-5 backdrop-blur-xl sm:-mx-6 sm:px-6 lg:-mx-10 lg:px-10 2xl:-mx-12 2xl:px-12">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
             <div>
@@ -486,11 +738,8 @@ export default function Home({
                     <Link
                       key={item}
                       href={item === "en" ? "/" : "/?lang=sr"}
-                      className={`lang-toggle rounded-full px-4 py-2 text-sm font-semibold ${
-                        active
-                          ? "bg-stone-900 text-stone-50 shadow-[0_8px_18px_rgba(31,28,24,0.18)]"
-                          : "text-stone-600"
-                      }`}
+                      className="lang-toggle rounded-full px-4 py-2 text-sm font-semibold"
+                      data-active={active ? "true" : "false"}
                       aria-current={active ? "true" : undefined}
                     >
                       {languageLabels[item]}
@@ -534,54 +783,6 @@ export default function Home({
             </div>
           </div>
 
-          <aside className="card-surface overflow-hidden rounded-[2rem] p-5 shadow-[0_26px_70px_rgba(44,36,28,0.08)] sm:p-6">
-            <p className="text-xs uppercase tracking-[0.28em] text-stone-500">
-              {t.featuredProjectLabel}
-            </p>
-            <Link
-              href={`/projects/${featuredProject.slug}?lang=${locale}`}
-              className="group mt-4 block"
-            >
-              <div className="card-media relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
-                <Image
-                  src={featuredProject.imageSrc}
-                  alt={featuredProject.title}
-                  fill
-                  sizes="(min-width: 1024px) 35vw, 100vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                />
-              </div>
-              <div className="mt-4 flex items-center justify-between gap-3 text-xs uppercase tracking-[0.24em] text-stone-500">
-                <span>{featuredProject.type}</span>
-                <span>{featuredProject.year}</span>
-              </div>
-              <h2 className="mt-3 font-display text-[2.15rem] leading-none text-stone-900">
-                {featuredProject.title}
-              </h2>
-              <p className="mt-3 text-sm leading-6 text-stone-650">
-                {featuredProject.location}
-              </p>
-              <p className="mt-4 text-xs uppercase tracking-[0.22em] text-stone-500">
-                {t.featuredProjectCta}
-              </p>
-            </Link>
-
-            <div className="mt-5 grid grid-cols-2 gap-3 text-sm text-stone-600">
-              {t.stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="rounded-[1.4rem] border border-white/70 bg-white/78 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.75)]"
-                >
-                  <p className="text-2xl font-semibold text-stone-900">{stat.value}</p>
-                  <p className="mt-2 leading-6 text-stone-600">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-4 rounded-[1.5rem] border border-dashed border-stone-300/90 bg-[#f7f2eb] p-4 text-sm leading-6 text-stone-600">
-              {t.note}
-            </div>
-          </aside>
         </section>
 
         <section
@@ -650,18 +851,19 @@ export default function Home({
 
           <div className="grid gap-5 lg:grid-cols-3 xl:gap-6">
             {visibleProjects.map((project) => (
-              <Link
+              <button
+                type="button"
                 key={`${locale}-${project.title}`}
-                href={`/projects/${project.slug}?lang=${locale}`}
-                className="card-surface card-hover rounded-[2rem] p-5 sm:p-6"
+                onClick={() => openGallery(project)}
+                className="card-surface card-hover project-card rounded-[2rem] p-5 text-left sm:p-6"
               >
-                <div className="card-media relative mb-6 aspect-[4/3] overflow-hidden rounded-[1.55rem]">
+                <div className="card-media project-card-media relative mb-6 aspect-[4/3] overflow-hidden rounded-[1.55rem]">
                   <Image
                     src={project.imageSrc}
                     alt={project.title}
                     fill
                     sizes="(min-width: 1280px) 30vw, (min-width: 1024px) 33vw, 100vw"
-                    className="object-cover"
+                    className="project-media-image"
                   />
                 </div>
                 <div className="flex items-center justify-between gap-4 text-xs uppercase tracking-[0.25em] text-stone-500">
@@ -680,18 +882,34 @@ export default function Home({
                 <p className="mt-6 text-xs uppercase tracking-[0.24em] text-stone-500">
                   {t.openProjectLabel}
                 </p>
-              </Link>
+              </button>
             ))}
           </div>
 
-          {hasHiddenProjects ? (
+          {projectsWithGallery.length > 3 ? (
             <div className="mt-8 flex justify-center">
               <button
                 type="button"
                 onClick={() => setShowAllProjects((prev) => !prev)}
-                className="button-secondary rounded-full px-5 py-2.5 text-sm font-semibold"
+                className="projects-toggle-button"
               >
-                {showAllProjects ? t.seeLessProjects : t.seeMoreProjects}
+                <span className="projects-toggle-count">
+                  {showAllProjects
+                    ? `${String(projectsWithGallery.length).padStart(2, "0")} / ${String(
+                        projectsWithGallery.length,
+                      ).padStart(2, "0")}`
+                    : `${String(visibleProjects.length).padStart(2, "0")} / ${String(
+                        projectsWithGallery.length,
+                      ).padStart(2, "0")}`}
+                </span>
+                <span className="projects-toggle-action">
+                  <span className="projects-toggle-label">
+                    {showAllProjects ? t.seeLessProjects : t.seeMoreProjects}
+                  </span>
+                  <span className="projects-toggle-icon" aria-hidden="true">
+                    {showAllProjects ? "-" : "+"}
+                  </span>
+                </span>
               </button>
             </div>
           ) : null}
@@ -780,6 +998,99 @@ export default function Home({
 
         <footer className="section-divider py-8 text-sm text-stone-500">{t.footer}</footer>
       </section>
+
+      {selectedProject ? (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(23,19,15,0.6)] p-4 sm:p-6"
+          onClick={closeGallery}
+        >
+          <div
+            className="gallery-dialog w-full max-w-[1120px] rounded-[2rem]"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="gallery-dialog-header flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p className="text-xs uppercase tracking-[0.24em] text-stone-500">
+                  {selectedProject.type}
+                </p>
+                <h3 className="mt-2 font-display text-[2rem] leading-none text-stone-900 sm:text-[2.4rem]">
+                  {selectedProject.title}
+                </h3>
+                <p className="mt-2 text-sm uppercase tracking-[0.18em] text-stone-500">
+                  {selectedProject.location}
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={closeGallery}
+                className="gallery-close-button rounded-full px-4 py-2 text-sm font-semibold"
+              >
+                <span>{locale === "sr" ? "Zatvori" : "Close"}</span>
+              </button>
+            </div>
+
+            <div className="gallery-dialog-body">
+              <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_220px] lg:gap-4">
+                <div className="gallery-main-media relative aspect-[16/10] overflow-hidden">
+                  {activeImageSrc ? (
+                    <Image
+                      src={activeImageSrc}
+                      alt={`${selectedProject.title} ${safeActiveImageIndex + 1}`}
+                      fill
+                      sizes="(min-width: 1024px) 65vw, 100vw"
+                      className="gallery-main-image"
+                    />
+                  ) : null}
+                </div>
+
+                <div className="gallery-thumbnail-grid grid max-h-[620px] grid-cols-4 gap-3 overflow-y-auto lg:grid-cols-1">
+                  {selectedProject.galleryImages.map((imageSrc, index) => {
+                    const isActive = index === safeActiveImageIndex;
+                    return (
+                      <button
+                        key={`${selectedProject.slug}-gallery-thumb-${index}`}
+                        type="button"
+                        onClick={() => setActiveImageIndex(index)}
+                        className="gallery-thumbnail relative min-h-[76px] overflow-hidden rounded-xl"
+                        data-active={isActive ? "true" : "false"}
+                        aria-label={`${locale === "sr" ? "Prikazi sliku" : "Show image"} ${index + 1}`}
+                      >
+                        <Image
+                          src={imageSrc}
+                          alt={`${selectedProject.title} thumbnail ${index + 1}`}
+                          fill
+                          sizes="200px"
+                          className="gallery-thumbnail-image"
+                        />
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="gallery-dialog-footer flex items-center justify-between gap-4">
+                <button
+                  type="button"
+                  onClick={() => setActiveImageIndex((prev) => prev - 1)}
+                  className="gallery-nav-button rounded-full text-sm font-semibold"
+                >
+                  <span>{locale === "sr" ? "Prethodna" : "Previous"}</span>
+                </button>
+                <p className="text-xs uppercase tracking-[0.22em] text-stone-500">
+                  {safeActiveImageIndex + 1} / {galleryCount}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setActiveImageIndex((prev) => prev + 1)}
+                  className="gallery-nav-button rounded-full px-7 py-3 text-sm font-semibold"
+                >
+                  <span>{locale === "sr" ? "Sledeca" : "Next"}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </main>
   );
 }

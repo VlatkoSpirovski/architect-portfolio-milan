@@ -81,6 +81,10 @@ type Content = {
 
 type SearchParamMap = Promise<Record<string, string | string[] | undefined>>;
 
+const PROJECT_CARD_IMAGE_QUALITY = 72;
+const GALLERY_MAIN_IMAGE_QUALITY = 76;
+const GALLERY_THUMBNAIL_IMAGE_QUALITY = 56;
+
 const content: Record<Locale, Content> = {
   en: {
     badge: "EN",
@@ -668,6 +672,7 @@ export default function Home({
   const locale = parseLocale(params.lang);
   const [selectedProjectSlug, setSelectedProjectSlug] = useState<string | null>(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [isGalleryMainImageLoaded, setIsGalleryMainImageLoaded] = useState(false);
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -690,11 +695,13 @@ export default function Home({
     setMobileMenuOpen(false);
     setSelectedProjectSlug(project.slug);
     setActiveImageIndex(0);
+    setIsGalleryMainImageLoaded(false);
   }
 
   function closeGallery() {
     setSelectedProjectSlug(null);
     setActiveImageIndex(0);
+    setIsGalleryMainImageLoaded(false);
   }
 
   return (
@@ -931,7 +938,7 @@ export default function Home({
                     alt={project.title}
                     fill
                     sizes="(min-width: 1280px) 30vw, (min-width: 1024px) 33vw, 100vw"
-                    quality={100}
+                    quality={PROJECT_CARD_IMAGE_QUALITY}
                     className="project-media-image"
                   />
                 </div>
@@ -1103,42 +1110,53 @@ export default function Home({
                 <div className="gallery-main-media relative aspect-[16/10] overflow-hidden">
                   {activeImageSrc ? (
                     <Image
+                      key={activeImageSrc}
                       src={activeImageSrc}
                       alt={`${selectedProject.title} ${safeActiveImageIndex + 1}`}
                       fill
-                      sizes="(min-width: 1024px) 65vw, 100vw"
-                      quality={100}
+                      sizes="(min-width: 1280px) 896px, (min-width: 1024px) calc(100vw - 320px), calc(100vw - 2rem)"
+                      quality={GALLERY_MAIN_IMAGE_QUALITY}
+                      loading="eager"
+                      decoding="async"
+                      preload
+                      onLoad={() => setIsGalleryMainImageLoaded(true)}
                       style={{ objectFit: "contain" }}
                       className="gallery-main-image"
                     />
                   ) : null}
                 </div>
 
-                <div className="gallery-thumbnail-grid grid max-h-[620px] grid-cols-4 gap-3 overflow-y-auto lg:grid-cols-1">
-                  {selectedProject.galleryImages.map((imageSrc, index) => {
-                    const isActive = index === safeActiveImageIndex;
-                    return (
-                      <button
-                        key={`${selectedProject.slug}-gallery-thumb-${index}`}
-                        type="button"
-                        onClick={() => setActiveImageIndex(index)}
-                        className="gallery-thumbnail relative min-h-[76px] overflow-hidden rounded-xl"
-                        data-active={isActive ? "true" : "false"}
-                        aria-label={`${locale === "sr" ? "Prikazi sliku" : "Show image"} ${index + 1}`}
-                      >
-                        <Image
-                          src={imageSrc}
-                          alt={`${selectedProject.title} thumbnail ${index + 1}`}
-                          fill
-                          sizes="200px"
-                          quality={100}
-                          style={{ objectFit: "contain" }}
-                          className="gallery-thumbnail-image"
-                        />
-                      </button>
-                    );
-                  })}
-                </div>
+                {isGalleryMainImageLoaded ? (
+                  <div className="gallery-thumbnail-grid grid max-h-[620px] grid-cols-4 gap-3 overflow-y-auto lg:grid-cols-1">
+                    {selectedProject.galleryImages.map((imageSrc, index) => {
+                      const isActive = index === safeActiveImageIndex;
+                      return (
+                        <button
+                          key={`${selectedProject.slug}-gallery-thumb-${index}`}
+                          type="button"
+                          onClick={() => setActiveImageIndex(index)}
+                          className="gallery-thumbnail relative min-h-[76px] overflow-hidden rounded-xl"
+                          data-active={isActive ? "true" : "false"}
+                          aria-label={`${locale === "sr" ? "Prikazi sliku" : "Show image"} ${index + 1}`}
+                        >
+                          <Image
+                            src={imageSrc}
+                            alt={`${selectedProject.title} thumbnail ${index + 1}`}
+                            fill
+                            sizes="160px"
+                            quality={GALLERY_THUMBNAIL_IMAGE_QUALITY}
+                            loading="lazy"
+                            decoding="async"
+                            style={{ objectFit: "contain" }}
+                            className="gallery-thumbnail-image"
+                          />
+                        </button>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <div className="gallery-thumbnail-grid hidden max-h-[620px] lg:block" aria-hidden="true" />
+                )}
               </div>
 
               <div className="gallery-dialog-footer flex items-center justify-between gap-4">

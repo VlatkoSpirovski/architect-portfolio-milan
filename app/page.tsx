@@ -39,7 +39,6 @@ type ProcessStep = {
 type Content = {
   badge: string;
   studioName: string;
-  studioLine: string;
   cta: string;
   nav: SectionLink[];
   heroEyebrow: string;
@@ -86,8 +85,6 @@ const content: Record<Locale, Content> = {
   en: {
     badge: "EN",
     studioName: "Milan Milojevic Architecture",
-    studioLine:
-      "Independent architectural practice for refined homes, boutique residential buildings, and interior transformations.",
     cta: "Book a consultation",
     nav: [
       { href: "#about", label: "About" },
@@ -141,37 +138,37 @@ const content: Record<Locale, Content> = {
     projects: [
       {
         slug: "villa-beti",
-        title: "Villa Beti",
+        title: "Private house",
         type: "Private Residence",
         year: "2024",
-        location: "Ohrid, North Macedonia",
+        location: "Cacak, Serbia",
         description:
           "A hillside residence organized around panoramic views, filtered sun exposure, and layered outdoor terraces.",
         imageSrc: "/images/kucaPrva/1.jpg",
       },
       {
         slug: "courtyard-house",
-        title: "Courtyard House",
-        type: "Family Home",
-        year: "2023",
-        location: "Skopje, North Macedonia",
+        title: "Residential Complex",
+        type: "Residential Complex",
+        year: "2024",
+        location: "Zlatibor, Serbia",
         description:
           "An urban home centered on an internal courtyard that improves privacy, daylight, and indoor climate comfort.",
         imageSrc: "/images/stambenaZgradaUzice/001.jpg",
       },
       {
         slug: "studio-terrace",
-        title: "Studio Terrace",
-        type: "Renovation",
+        title: "Residential Complex",
+        type: "Residential Complex",
         year: "2022",
-        location: "Belgrade, Serbia",
+        location: "Zlatibor, Serbia",
         description:
-          "Apartment transformation that opens the main living zone toward a terrace and simplifies circulation.",
+          "A residential apartment designed to extend the main living space toward the terrace and streamline circulation.",
         imageSrc: "/images/stambenaZgradaZlatibor/1.jpg",
       },
       {
         slug: "stambena-zgrada-zlatibor-1",
-        title: "Stambena Zgrada Zlatibor I",
+        title: "Residential Complex",
         type: "Residential Building",
         year: "2022",
         location: "Zlatibor, Serbia",
@@ -181,7 +178,7 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "stambena-zgrada-zlatibor-2",
-        title: "Stambena Zgrada Zlatibor II",
+        title: "Residential Complex",
         type: "Residential Building",
         year: "2022",
         location: "Zlatibor, Serbia",
@@ -191,7 +188,7 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "stambena-zgrada-zlatibor-3",
-        title: "Stambena Zgrada Zlatibor III",
+        title: "Residential Complex",
         type: "Residential Building",
         year: "2022",
         location: "Zlatibor, Serbia",
@@ -201,7 +198,7 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "stambena-zgrada-zlatibor-4",
-        title: "Stambena Zgrada Zlatibor IV",
+        title: "Residential Complex",
         type: "Residential Building",
         year: "2022",
         location: "Zlatibor, Serbia",
@@ -211,7 +208,7 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "stambena-zgrada-zlatibor-5",
-        title: "Stambena Zgrada Zlatibor V",
+        title: "Residential Complex",
         type: "Residential Building",
         year: "2025",
         location: "Zlatibor, Serbia",
@@ -221,7 +218,7 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "vila-zlatibor",
-        title: "Vila Zlatibor",
+        title: "Private Villa",
         type: "Villa Concept",
         year: "2025",
         location: "Zlatibor, Serbia",
@@ -231,8 +228,8 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "stambeni-objekt-gorni-milanovac",
-        title: "Stambeni Objekt Gornji Milanovac",
-        type: "Residential Building",
+        title: "Private House",
+        type: "Private Residence",
         year: "2025",
         location: "Gornji Milanovac, Serbia",
         description:
@@ -241,8 +238,8 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "stambena-zgrada-cacak",
-        title: "Stambena Zgrada Cacak",
-        type: "Residential Building",
+        title: "Private House",
+        type: "Private Residence",
         year: "2025",
         location: "Cacak, Serbia",
         description:
@@ -251,8 +248,8 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "stambena-kuca-cacak",
-        title: "Stambena Kuca Cacak",
-        type: "Family House",
+        title: "Private House",
+        type: "Private Residence",
         year: "2025",
         location: "Cacak, Serbia",
         description:
@@ -261,7 +258,7 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "rekonstrukcija-bazena-lucani",
-        title: "Rekonstrukcija Bazena Lucani",
+        title: "Reconstruction of an Open-Air Pool",
         type: "Public Renovation",
         year: "2024",
         location: "Lucani, Serbia",
@@ -317,8 +314,6 @@ const content: Record<Locale, Content> = {
   sr: {
     badge: "SR",
     studioName: "Milan Milojevic Arhitektura",
-    studioLine:
-      "Samostalna arhitektonska praksa za savremene kuce, manje stambene objekte i promisljenje adaptacije.",
     cta: "Zakazi konsultacije",
     nav: [
       { href: "#about", label: "O studiju" },
@@ -368,92 +363,92 @@ const content: Record<Locale, Content> = {
     ],
     projectsLabel: "Odabrani radovi",
     seeMoreProjects: "Prikazi jos projekata",
-    seeLessProjects: "Prikazi manje",
+    seeLessProjects: "Prikazi manje projekata",
     projects: [
       {
         slug: "villa-beti",
-        title: "Villa Beti",
-        type: "Privatna kuca",
+        title: "Privatna kuća",
+        type: "Porodična kuća",
         year: "2024",
-        location: "Ohrid, Severna Makedonija",
+        location: "Cacak, Srbija",
         description:
-          "Kuca na padini organizovana oko panoramskih vizura, filtriranog osuncanja i slojevitih terasa.",
+          "Kuca na padini organizovana oko panoramskih vizura, kontrolisanog osuncanja i slojevitih terasa.",
         imageSrc: "/images/kucaPrva/1.jpg",
       },
       {
         slug: "courtyard-house",
-        title: "Courtyard House",
-        type: "Porodicna kuca",
+        title: "Stambeni kompleks",
+        type: "Višeporodično stanovanje",
         year: "2023",
-        location: "Skoplje, Severna Makedonija",
+        location: "Zlatibor, Srbija",
         description:
-          "Gradska kuca sa centralnim dvoristem koje obezbedjuje privatnost, svetlo i prijatniju mikroklimu.",
+          "Gradska kuca sa centralnim dvoristem koje donosi vise privatnosti, prirodnog svetla i prijatniju mikroklimu.",
         imageSrc: "/images/stambenaZgradaUzice/001.jpg",
       },
       {
         slug: "studio-terrace",
-        title: "Studio Terrace",
-        type: "Adaptacija",
-        year: "2022",
-        location: "Beograd, Srbija",
+        title: "Stambeni kompleks",
+        type: "Višeporodično stanovanje",
+        year: "2025",
+        location: "Zlatibor, Srbija",
         description:
-          "Transformacija stana koja otvara dnevnu zonu ka terasi i pojednostavljuje svakodnevno kretanje.",
+          "Adaptacija stana koja otvara dnevnu zonu prema terasi i cini svakodnevno kretanje jednostavnijim.",
         imageSrc: "/images/stambenaZgradaZlatibor/1.jpg",
       },
       {
         slug: "stambena-zgrada-zlatibor-1",
-        title: "Stambena Zgrada Zlatibor I",
-        type: "Stambena zgrada",
-        year: "2022",
+        title: "Stambeni kompleks",
+        type: "Višeporodično stanovanje",
+        year: "2024",
         location: "Zlatibor, Srbija",
         description:
-          "Stambeni koncept sa naglaskom na ritam fasade, dubinu elemenata i uravnotezene otvore.",
+          "Stambeni koncept sa naglaskom na ritam fasade, dubinu elemenata i uravnotezen raspored otvora.",
         imageSrc: "/images/stambenaZgradaZlatibor1/001.jpg",
       },
       {
         slug: "stambena-zgrada-zlatibor-2",
-        title: "Stambena Zgrada Zlatibor II",
-        type: "Stambena zgrada",
-        year: "2022",
+        title: "Stambeni kompleks",
+        type: "Višeporodično stanovanje",
+        year: "2023",
         location: "Zlatibor, Srbija",
         description:
-          "Koncept sa jacim uglovnim identitetom i efikasnom organizacijom stambenih jedinica.",
+          "Koncept sa izrazajnijim uglom i efikasno organizovanim stambenim jedinicama.",
         imageSrc: "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%281%29.jpg",
       },
       {
         slug: "stambena-zgrada-zlatibor-3",
-        title: "Stambena Zgrada Zlatibor III",
-        type: "Stambena zgrada",
-        year: "2022",
+        title: "Stambeni kompleks",
+        type: "Višeporodično stanovanje",
+        year: "2024",
         location: "Zlatibor, Srbija",
         description:
-          "Iteracija volumena sa fokusom na proporcionalnu kompoziciju fasade i kontrolu privatnosti.",
+          "Razrada volumena sa fokusom na proporcionalnu kompoziciju fasade i bolju kontrolu privatnosti.",
         imageSrc: "/images/stambenaZgradaZlatibor3/001.jpg",
       },
       {
         slug: "stambena-zgrada-zlatibor-4",
-        title: "Stambena Zgrada Zlatibor IV",
-        type: "Stambena zgrada",
-        year: "2022",
+        title: "Stambeni kompleks",
+        type: "Višeporodično stanovanje",
+        year: "2025",
         location: "Zlatibor, Srbija",
         description:
-          "Savremeni stambeni pristup sa toplijim tonovima i slojevitom artikulacijom fasade.",
+          "Savremeni stambeni pristup sa toplijim tonovima i slojevitije oblikovanom fasadom.",
         imageSrc: "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.png",
       },
       {
         slug: "stambena-zgrada-zlatibor-5",
-        title: "Stambena Zgrada Zlatibor V",
-        type: "Stambena zgrada",
+        title: "Privatna kuća",
+        type: "Porodična kuća",
         year: "2025",
         location: "Zlatibor, Srbija",
         description:
-          "Nova studija fasade sa jacim ritmom, teksturom i vecim otvorima za savremeni planinski kontekst.",
+          "Nova studija fasade sa jacim ritmom, izrazajnijom teksturom i vecim otvorima za savremeni planinski kontekst.",
         imageSrc: "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.png",
       },
       {
         slug: "vila-zlatibor",
         title: "Vila Zlatibor",
-        type: "Vila",
+        type: "Privatna Vila",
         year: "2025",
         location: "Zlatibor, Srbija",
         description:
@@ -462,18 +457,18 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "stambeni-objekt-gorni-milanovac",
-        title: "Stambeni Objekt Gornji Milanovac",
-        type: "Stambeni objekt",
+        title: "Privatna kuća",
+        type: "Porodična kuća",
         year: "2025",
         location: "Gornji Milanovac, Srbija",
         description:
-          "Viseporodicni koncept sa racionalnom organizacijom stanova, kvalitetnim osvetljenjem i uravnotezenom fasadom.",
+          "Viseporodicni koncept sa racionalnom organizacijom stanova, kvalitetnim osvetljenjem i uravnotezenim fasadnim izrazom.",
         imageSrc: "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.png",
       },
       {
         slug: "stambena-zgrada-cacak",
-        title: "Stambena Zgrada Cacak",
-        type: "Stambena zgrada",
+        title: "Privatna kuća",
+        type: "Porodična kuća",
         year: "2025",
         location: "Cacak, Srbija",
         description:
@@ -482,22 +477,22 @@ const content: Record<Locale, Content> = {
       },
       {
         slug: "stambena-kuca-cacak",
-        title: "Stambena Kuca Cacak",
-        type: "Porodicna kuca",
+        title: "Privatna kuća",
+        type: "Porodična kuća",
         year: "2025",
         location: "Cacak, Srbija",
         description:
-          "Savremeni predlog kuce koji spaja kompaktnu organizaciju, velike otvore i slojevite spoljne pragove.",
+          "Savremeni predlog kuce koji spaja kompaktnu organizaciju, velike otvore i slojevito oblikovane spoljne prelaze.",
         imageSrc: "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.png",
       },
       {
         slug: "rekonstrukcija-bazena-lucani",
-        title: "Rekonstrukcija Bazena Lucani",
+        title: "Rekonstrukcija bazena Lucani",
         type: "Javna rekonstrukcija",
         year: "2024",
         location: "Lucani, Srbija",
         description:
-          "Predlog rekonstrukcije bazenskog kompleksa sa unapredjenom funkcijom, kretanjem i vizuelnim identitetom.",
+          "Predlog rekonstrukcije bazenskog kompleksa sa unapredjenom funkcijom, jasnijim kretanjem i osvezenim vizuelnim identitetom.",
         imageSrc:
           "/images/rekonstrukcijaBazenaLucani/0-02-05-1811798fd8d5d069dd70f877e60c7ec9fa6c2f011c273f47229f10a90ffd936f_51e1b7a5ced5fcb9.jpg",
       },
@@ -608,12 +603,13 @@ const projectGalleryBySlug: Record<string, string[]> = {
     "/images/stambenaZgradaZlatibor4/ZLATIBOR%2005.png",
   ],
   "stambena-zgrada-zlatibor-5": [
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_pxxmr3pxxmr3pxxm.png",
     "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.png",
     "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_8c0wwj8c0wwj8c0w.png",
     "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_edsbcvedsbcvedsb.png",
     "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_he8xsahe8xsahe8x.png",
     "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_kpcaqkkpcaqkkpca.png",
-    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_pxxmr3pxxmr3pxxm.png",
+
   ],
   "vila-zlatibor": [
     "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.png",
@@ -670,17 +666,20 @@ export default function Home({
 }) {
   const params = use(searchParams);
   const locale = parseLocale(params.lang);
-  const [selectedProject, setSelectedProject] = useState<ProjectWithGallery | null>(
-    null,
-  );
+  const [selectedProjectSlug, setSelectedProjectSlug] = useState<string | null>(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [showAllProjects, setShowAllProjects] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const t = content[locale];
   const projectsWithGallery: ProjectWithGallery[] = t.projects.map((project) => ({
     ...project,
     galleryImages: projectGalleryBySlug[project.slug] ?? [project.imageSrc],
   }));
+  const selectedProject =
+    selectedProjectSlug === null
+      ? null
+      : projectsWithGallery.find((project) => project.slug === selectedProjectSlug) ?? null;
   const visibleProjects = showAllProjects ? projectsWithGallery : projectsWithGallery.slice(0, 3);
   const galleryCount = selectedProject?.galleryImages.length ?? 0;
   const safeActiveImageIndex =
@@ -688,12 +687,13 @@ export default function Home({
   const activeImageSrc = selectedProject?.galleryImages[safeActiveImageIndex];
 
   function openGallery(project: ProjectWithGallery) {
-    setSelectedProject(project);
+    setMobileMenuOpen(false);
+    setSelectedProjectSlug(project.slug);
     setActiveImageIndex(0);
   }
 
   function closeGallery() {
-    setSelectedProject(null);
+    setSelectedProjectSlug(null);
     setActiveImageIndex(0);
   }
 
@@ -705,19 +705,38 @@ export default function Home({
         <div className="absolute left-[35%] top-[32rem] h-[16rem] w-[16rem] rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.5),_transparent_72%)]" />
       </div>
 
-      <section className="mx-auto flex w-full max-w-[1800px] flex-col pb-20 sm:px-6 lg:px-10 2xl:px-12">
-        <header className="sticky top-0 z-30 -mx-4 mb-4 border-b border-black/8 bg-[rgba(246,241,234,0.78)] px-4 py-5 backdrop-blur-xl sm:-mx-6 sm:px-6 lg:-mx-10 lg:px-10 2xl:-mx-12 2xl:px-12">
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-            <div>
+      <section className="mx-auto flex w-full max-w-[1800px] flex-col px-4 pb-20 sm:px-6 lg:px-10 2xl:px-12">
+        <header className="sticky top-3 z-30 mb-6 rounded-[1.75rem] border border-white/70 bg-[rgba(246,241,234,0.86)] px-4 py-4 shadow-[0_20px_50px_rgba(33,27,20,0.08)] backdrop-blur-xl sm:top-0 sm:-mx-6 sm:rounded-none sm:border-x-0 sm:border-t-0 sm:border-b sm:px-6 sm:py-5 sm:shadow-none lg:-mx-10 lg:px-10 2xl:-mx-12 2xl:px-12">
+          <div className="flex items-center justify-between gap-4 lg:flex-row lg:items-center">
+            <div className="flex min-w-0 self-center items-center gap-3">
+              <div className="relative h-20 w-30 shrink-0 overflow-visible">
+                <Image
+                  src="/logoMMNew.png"
+                  alt="Milan Milojevic Architecture logo"
+                  fill
+                  sizes="160px"
+                  quality={100}
+                  className="object-contain scale-[2.0]"
+                  priority
+                />
+              </div>
               <p className="text-xs uppercase tracking-[0.35em] text-stone-500">
                 {t.studioName}
               </p>
-              <p className="mt-2 max-w-xl text-sm leading-6 text-stone-600">
-                {t.studioLine}
-              </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              className="mobile-menu-button rounded-full text-sm font-semibold lg:hidden"
+              style={{ padding: "10px" }}
+              onClick={() => setMobileMenuOpen((prev) => !prev)}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu-panel"
+            >
+              {mobileMenuOpen ? (locale === "sr" ? "Zatvori" : "Close") : locale === "sr" ? "Meni" : "Menu"}
+            </button>
+
+            <div className="hidden flex-wrap items-center gap-3 lg:flex">
               <nav className="hidden items-center gap-6 rounded-full border border-white/70 bg-white/75 px-6 py-3 text-sm text-stone-600 shadow-[0_10px_30px_rgba(33,27,20,0.06)] backdrop-blur lg:flex">
                 {t.nav.map((item) => (
                   <a
@@ -756,21 +775,70 @@ export default function Home({
               </a>
             </div>
           </div>
+
+          {mobileMenuOpen ? (
+            <div
+              id="mobile-menu-panel"
+              className="mt-4 grid gap-3 border-t border-black/8 pt-4 lg:hidden"
+            >
+              <nav className="grid grid-cols-2 gap-2">
+                {t.nav.map((item) => (
+                  <a
+                    key={`${locale}-mobile-${item.href}`}
+                    href={item.href}
+                    className="button-secondary rounded-full px-4 py-3 text-center text-sm font-medium"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </nav>
+
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                <div className="flex w-full rounded-full bg-white p-1 shadow-sm">
+                  {(["en", "sr"] as const).map((item) => {
+                    const active = item === locale;
+
+                    return (
+                        <Link
+                            key={`mobile-${item}`}
+                            href={item === "en" ? "/" : "/?lang=sr"}
+                            className={`flex-1 text-center rounded-full py-2 text-sm font-medium transition-all duration-200 ${
+                                active
+                                    ? "bg-stone-900 text-white"
+                                    : "text-stone-600 hover:bg-stone-100 hover:text-stone-900"
+                            }`}
+                            aria-current={active ? "true" : undefined}
+                        >
+                          {languageLabels[item]}
+                        </Link>
+                    );
+                  })}
+                </div>                <a
+                  href={`mailto:${t.contactEmail}`}
+                  className="button-primary rounded-full px-5 py-3 text-center text-sm font-semibold sm:min-w-[13rem]"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {t.cta}
+                </a>
+              </div>
+            </div>
+          ) : null}
         </header>
 
-        <section className="grid min-h-[78vh] gap-10 py-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-16">
+        <section className="grid min-h-[78vh] gap-8 py-6 sm:py-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-16">
           <div className="max-w-4xl">
             <p className="mb-4 text-xs uppercase tracking-[0.28em] text-stone-500">
               {t.heroEyebrow}
             </p>
-            <h1 className="max-w-4xl font-display text-[3.2rem] leading-[0.98] tracking-[-0.03em] text-stone-900 sm:text-[4.4rem] lg:text-[5.3rem]">
+            <h1 className="max-w-4xl font-display text-[2.95rem] leading-[0.94] tracking-[-0.03em] text-stone-900 sm:text-[4.4rem] sm:leading-[0.98] lg:text-[5.3rem]">
               {t.heroTitle}
             </h1>
             <p className="mt-6 max-w-xl text-[1.02rem] leading-7 text-stone-650">
               {t.heroText}
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 hidden flex-wrap gap-3 sm:flex">
               {t.nav.map((item) => (
                 <a
                   key={`${locale}-hero-${item.href}`}
@@ -853,7 +921,7 @@ export default function Home({
             {visibleProjects.map((project) => (
               <button
                 type="button"
-                key={`${locale}-${project.title}`}
+                key={`${locale}-${project.slug}`}
                 onClick={() => openGallery(project)}
                 className="card-surface card-hover project-card rounded-[2rem] p-5 text-left sm:p-6"
               >
@@ -863,6 +931,7 @@ export default function Home({
                     alt={project.title}
                     fill
                     sizes="(min-width: 1280px) 30vw, (min-width: 1024px) 33vw, 100vw"
+                    quality={100}
                     className="project-media-image"
                   />
                 </div>
@@ -968,7 +1037,7 @@ export default function Home({
             <p className="mt-6 max-w-xl text-lg leading-8 text-stone-650">{t.contactText}</p>
           </div>
 
-          <div className="card-surface flex min-w-[300px] flex-col gap-3 rounded-[1.9rem] p-4 text-sm font-semibold sm:p-5">
+          <div className="card-surface flex min-w-0 flex-col gap-3 rounded-[1.9rem] p-4 text-sm font-semibold sm:min-w-[300px] sm:p-5">
             <div className="rounded-[1.4rem] border border-white/60 bg-white/55 p-4">
               <p className="text-xs uppercase tracking-[0.24em] text-stone-500">
                 {t.contactCityLabel}
@@ -1038,6 +1107,8 @@ export default function Home({
                       alt={`${selectedProject.title} ${safeActiveImageIndex + 1}`}
                       fill
                       sizes="(min-width: 1024px) 65vw, 100vw"
+                      quality={100}
+                      style={{ objectFit: "contain" }}
                       className="gallery-main-image"
                     />
                   ) : null}
@@ -1060,6 +1131,8 @@ export default function Home({
                           alt={`${selectedProject.title} thumbnail ${index + 1}`}
                           fill
                           sizes="200px"
+                          quality={100}
+                          style={{ objectFit: "contain" }}
                           className="gallery-thumbnail-image"
                         />
                       </button>

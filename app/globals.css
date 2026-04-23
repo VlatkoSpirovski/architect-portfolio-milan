@@ -153,7 +153,8 @@ button {
 
 .button-primary,
 .button-secondary,
-.lang-toggle {
+.lang-toggle,
+.mobile-menu-button {
   transition:
     transform 180ms ease,
     background-color 180ms ease,
@@ -165,13 +166,15 @@ button {
 
 .button-primary:hover,
 .button-secondary:hover,
-.lang-toggle:hover {
+.lang-toggle:hover,
+.mobile-menu-button:hover {
   transform: translateY(-1px);
 }
 
 .button-primary:focus-visible,
 .button-secondary:focus-visible,
 .lang-toggle:focus-visible,
+.mobile-menu-button:focus-visible,
 .interactive-link:focus-visible {
   outline: 2px solid rgba(31, 28, 24, 0.32);
   outline-offset: 3px;
@@ -236,6 +239,31 @@ button {
   color: #fff6ec;
 }
 
+.mobile-menu-button {
+  border: 1px solid rgba(31, 28, 24, 0.1);
+  background: rgba(255, 255, 255, 0.78);
+  color: #1f1c18;
+  box-shadow:
+    0 10px 24px rgba(33, 27, 20, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.mobile-menu-button:hover {
+  border-color: rgba(31, 28, 24, 0.2);
+  background: #efe4d8;
+}
+
+.mobile-menu-button[aria-expanded="true"] {
+  background: #1f1c18;
+  color: #f8f4ee;
+  box-shadow: 0 12px 28px rgba(31, 28, 24, 0.18);
+}
+
+.mobile-menu-button[aria-expanded="true"]:hover {
+  background: #2b2621;
+  color: #fff6ec;
+}
+
 .project-card {
   padding: 1.2rem;
   border-color: rgba(255, 255, 255, 0.88);
@@ -250,8 +278,8 @@ button {
 .project-media-image,
 .gallery-main-image,
 .gallery-thumbnail-image {
-  object-fit: cover;
-  transform: scale(1.035);
+  object-fit: contain;
+  transform: none;
 }
 
 .gallery-dialog {

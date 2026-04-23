@@ -208,7 +208,7 @@ const content: Record<Locale, Content> = {
         location: "Zlatibor, Serbia",
         description:
           "Contemporary housing concept developed through warmer tones and layered facade articulation.",
-        imageSrc: "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.png",
+        imageSrc: "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.webp",
       },
       {
         slug: "stambena-zgrada-zlatibor-5",
@@ -218,7 +218,7 @@ const content: Record<Locale, Content> = {
         location: "Zlatibor, Serbia",
         description:
           "A fresh facade study exploring rhythm, texture, and larger glazed openings for contemporary mountain housing.",
-        imageSrc: "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.png",
+        imageSrc: "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.webp",
       },
       {
         slug: "vila-zlatibor",
@@ -228,7 +228,7 @@ const content: Record<Locale, Content> = {
         location: "Zlatibor, Serbia",
         description:
           "A villa concept shaped around expanded outdoor living zones and stronger visual connection to the landscape.",
-        imageSrc: "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.png",
+        imageSrc: "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.webp",
       },
       {
         slug: "stambeni-objekt-gorni-milanovac",
@@ -238,7 +238,7 @@ const content: Record<Locale, Content> = {
         location: "Gornji Milanovac, Serbia",
         description:
           "A multi-family concept focused on practical apartment layouts, daylight, and balanced facade articulation.",
-        imageSrc: "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.png",
+        imageSrc: "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.webp",
       },
       {
         slug: "stambena-zgrada-cacak",
@@ -248,7 +248,7 @@ const content: Record<Locale, Content> = {
         location: "Cacak, Serbia",
         description:
           "An urban residential scheme with clear floorplate logic and a facade system tuned to neighborhood scale.",
-        imageSrc: "/images/stambenaZgradaCacak/ANTI%C4%86%2001.png",
+        imageSrc: "/images/stambenaZgradaCacak/ANTI%C4%86%2001.webp",
       },
       {
         slug: "stambena-kuca-cacak",
@@ -258,7 +258,7 @@ const content: Record<Locale, Content> = {
         location: "Cacak, Serbia",
         description:
           "A contemporary house proposal combining compact planning, generous openings, and layered outdoor thresholds.",
-        imageSrc: "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.png",
+        imageSrc: "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.webp",
       },
       {
         slug: "rekonstrukcija-bazena-lucani",
@@ -437,7 +437,7 @@ const content: Record<Locale, Content> = {
         location: "Zlatibor, Srbija",
         description:
           "Savremeni stambeni pristup sa toplijim tonovima i slojevitije oblikovanom fasadom.",
-        imageSrc: "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.png",
+        imageSrc: "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.webp",
       },
       {
         slug: "stambena-zgrada-zlatibor-5",
@@ -447,7 +447,7 @@ const content: Record<Locale, Content> = {
         location: "Zlatibor, Srbija",
         description:
           "Nova studija fasade sa jacim ritmom, izrazajnijom teksturom i vecim otvorima za savremeni planinski kontekst.",
-        imageSrc: "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.png",
+        imageSrc: "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.webp",
       },
       {
         slug: "vila-zlatibor",
@@ -457,7 +457,7 @@ const content: Record<Locale, Content> = {
         location: "Zlatibor, Srbija",
         description:
           "Koncept vile oblikovan kroz prostranije spoljne zone i snazniju vezu enterijera sa pejzazom.",
-        imageSrc: "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.png",
+        imageSrc: "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.webp",
       },
       {
         slug: "stambeni-objekt-gorni-milanovac",
@@ -467,7 +467,7 @@ const content: Record<Locale, Content> = {
         location: "Gornji Milanovac, Srbija",
         description:
           "Viseporodicni koncept sa racionalnom organizacijom stanova, kvalitetnim osvetljenjem i uravnotezenim fasadnim izrazom.",
-        imageSrc: "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.png",
+        imageSrc: "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.webp",
       },
       {
         slug: "stambena-zgrada-cacak",
@@ -477,7 +477,7 @@ const content: Record<Locale, Content> = {
         location: "Cacak, Srbija",
         description:
           "Urbani stambeni koncept sa jasnom logikom osnove i fasadnim sistemom prilagodjenim merilu okoline.",
-        imageSrc: "/images/stambenaZgradaCacak/ANTI%C4%86%2001.png",
+        imageSrc: "/images/stambenaZgradaCacak/ANTI%C4%86%2001.webp",
       },
       {
         slug: "stambena-kuca-cacak",
@@ -487,7 +487,7 @@ const content: Record<Locale, Content> = {
         location: "Cacak, Srbija",
         description:
           "Savremeni predlog kuce koji spaja kompaktnu organizaciju, velike otvore i slojevito oblikovane spoljne prelaze.",
-        imageSrc: "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.png",
+        imageSrc: "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.webp",
       },
       {
         slug: "rekonstrukcija-bazena-lucani",
@@ -599,49 +599,49 @@ const projectGalleryBySlug: Record<string, string[]> = {
     "/images/stambenaZgradaZlatibor3/005.jpg",
   ],
   "stambena-zgrada-zlatibor-4": [
-    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.png",
-    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2001.png",
-    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2002.png",
-    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2003.png",
-    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2004.png",
-    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2005.png",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.webp",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2001.webp",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2002.webp",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2003.webp",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2004.webp",
+    "/images/stambenaZgradaZlatibor4/ZLATIBOR%2005.webp",
   ],
   "stambena-zgrada-zlatibor-5": [
-    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_pxxmr3pxxmr3pxxm.png",
-    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.png",
-    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_8c0wwj8c0wwj8c0w.png",
-    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_edsbcvedsbcvedsb.png",
-    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_he8xsahe8xsahe8x.png",
-    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_kpcaqkkpcaqkkpca.png",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_pxxmr3pxxmr3pxxm.webp",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.webp",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_8c0wwj8c0wwj8c0w.webp",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_edsbcvedsbcvedsb.webp",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_he8xsahe8xsahe8x.webp",
+    "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_kpcaqkkpcaqkkpca.webp",
 
   ],
   "vila-zlatibor": [
-    "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.png",
-    "/images/vilaZlatibor/Gemini_Generated_Image_cef2glcef2glcef2.png",
-    "/images/vilaZlatibor/Gemini_Generated_Image_o8mfewo8mfewo8mf.png",
-    "/images/vilaZlatibor/Gemini_Generated_Image_pt81x4pt81x4pt81.png",
-    "/images/vilaZlatibor/Gemini_Generated_Image_q950nzq950nzq950.png",
+    "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.webp",
+    "/images/vilaZlatibor/Gemini_Generated_Image_cef2glcef2glcef2.webp",
+    "/images/vilaZlatibor/Gemini_Generated_Image_o8mfewo8mfewo8mf.webp",
+    "/images/vilaZlatibor/Gemini_Generated_Image_pt81x4pt81x4pt81.webp",
+    "/images/vilaZlatibor/Gemini_Generated_Image_q950nzq950nzq950.webp",
   ],
   "stambeni-objekt-gorni-milanovac": [
-    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.png",
-    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_fivifjfivifjfivi.png",
-    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_ozrwfmozrwfmozrw.png",
-    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_v535q1v535q1v535.png",
-    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_y8wdpqy8wdpqy8wd.png",
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.webp",
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_fivifjfivifjfivi.webp",
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_ozrwfmozrwfmozrw.webp",
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_v535q1v535q1v535.webp",
+    "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_y8wdpqy8wdpqy8wd.webp",
   ],
   "stambena-zgrada-cacak": [
-    "/images/stambenaZgradaCacak/ANTI%C4%86%2001.png",
-    "/images/stambenaZgradaCacak/ANTI%C4%86%2002.png",
-    "/images/stambenaZgradaCacak/ANTI%C4%86%2003.png",
-    "/images/stambenaZgradaCacak/ANTI%C4%86%2004.png",
-    "/images/stambenaZgradaCacak/Untitled.jpg",
+    "/images/stambenaZgradaCacak/ANTI%C4%86%2001.webp",
+    "/images/stambenaZgradaCacak/ANTI%C4%86%2002.webp",
+    "/images/stambenaZgradaCacak/ANTI%C4%86%2003.webp",
+    "/images/stambenaZgradaCacak/ANTI%C4%86%2004.webp",
+    "/images/stambenaZgradaCacak/Untitled.webp",
   ],
   "stambena-kuca-cacak": [
-    "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.png",
-    "/images/stambenaKucaCacak/Gemini_Generated_Image_bxd98rbxd98rbxd9.png",
-    "/images/stambenaKucaCacak/Gemini_Generated_Image_bynd1nbynd1nbynd.png",
-    "/images/stambenaKucaCacak/Gemini_Generated_Image_zh5i3ozh5i3ozh5i.png",
-    "/images/stambenaKucaCacak/ulazna%20fasada%201.png",
+    "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.webp",
+    "/images/stambenaKucaCacak/Gemini_Generated_Image_bxd98rbxd98rbxd9.webp",
+    "/images/stambenaKucaCacak/Gemini_Generated_Image_bynd1nbynd1nbynd.webp",
+    "/images/stambenaKucaCacak/Gemini_Generated_Image_zh5i3ozh5i3ozh5i.webp",
+    "/images/stambenaKucaCacak/ulazna%20fasada%201.webp",
   ],
   "rekonstrukcija-bazena-lucani": [
     "/images/rekonstrukcijaBazenaLucani/0-02-05-1811798fd8d5d069dd70f877e60c7ec9fa6c2f011c273f47229f10a90ffd936f_51e1b7a5ced5fcb9.jpg",

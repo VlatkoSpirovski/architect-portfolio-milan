@@ -81,9 +81,9 @@ type Content = {
 
 type SearchParamMap = Promise<Record<string, string | string[] | undefined>>;
 
-const PROJECT_CARD_IMAGE_QUALITY = 72;
-const GALLERY_MAIN_IMAGE_QUALITY = 76;
-const GALLERY_THUMBNAIL_IMAGE_QUALITY = 56;
+const PROJECT_CARD_IMAGE_QUALITY = 50;
+const GALLERY_MAIN_IMAGE_QUALITY = 50;
+const GALLERY_THUMBNAIL_IMAGE_QUALITY = 40;
 
 const content: Record<Locale, Content> = {
   en: {

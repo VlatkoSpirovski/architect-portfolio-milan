@@ -714,8 +714,8 @@ export default function Home({
 
       <section className="mx-auto flex w-full max-w-[1800px] flex-col px-4 pb-20 sm:px-6 lg:px-10 2xl:px-12">
         <header className="sticky top-3 z-30 mb-6 rounded-[1.75rem] border border-white/70 bg-[rgba(246,241,234,0.86)] px-4 py-4 shadow-[0_20px_50px_rgba(33,27,20,0.08)] backdrop-blur-xl sm:top-0 sm:-mx-6 sm:rounded-none sm:border-x-0 sm:border-t-0 sm:border-b sm:px-6 sm:py-5 sm:shadow-none lg:-mx-10 lg:px-10 2xl:-mx-12 2xl:px-12">
-          <div className="flex items-center justify-between gap-4 lg:flex-row lg:items-center">
-            <div className="flex min-w-0 self-center items-center gap-3">
+          <div className="flex flex-col items-center justify-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left lg:flex-row lg:items-center">
+            <div className="flex min-w-0 flex-col items-center justify-center gap-2 self-center sm:flex-row sm:gap-3">
               <div className="relative h-20 w-30 shrink-0 overflow-visible">
                 <Image
                   src="/logoMMNew.png"
@@ -727,14 +727,14 @@ export default function Home({
                   priority
                 />
               </div>
-              <p className="text-xs uppercase tracking-[0.35em] text-stone-500">
+              <p className="text-center text-xs uppercase tracking-[0.35em] text-stone-500 sm:text-left">
                 {t.studioName}
               </p>
             </div>
 
             <button
               type="button"
-              className="mobile-menu-button rounded-full text-sm font-semibold lg:hidden"
+              className="mobile-menu-button min-w-[6rem] rounded-full text-sm font-semibold lg:hidden"
               style={{ padding: "10px" }}
               onClick={() => setMobileMenuOpen((prev) => !prev)}
               aria-expanded={mobileMenuOpen}
@@ -786,9 +786,9 @@ export default function Home({
           {mobileMenuOpen ? (
             <div
               id="mobile-menu-panel"
-              className="mt-4 grid gap-3 border-t border-black/8 pt-4 lg:hidden"
+              className="mt-4 flex flex-col items-center gap-3 border-t border-black/8 pt-4 lg:hidden"
             >
-              <nav className="grid grid-cols-2 gap-2">
+              <nav className="grid w-full gap-2 sm:grid-cols-2">
                 {t.nav.map((item) => (
                   <a
                     key={`${locale}-mobile-${item.href}`}
@@ -801,29 +801,27 @@ export default function Home({
                 ))}
               </nav>
 
-              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-                <div className="flex w-full rounded-full bg-white p-1 shadow-sm">
+              <div className="flex w-full flex-col items-center gap-3">
+                <div className="flex w-full flex-col rounded-[1.5rem] bg-white p-1 shadow-sm sm:flex-row sm:rounded-full">
                   {(["en", "sr"] as const).map((item) => {
                     const active = item === locale;
 
                     return (
-                        <Link
-                            key={`mobile-${item}`}
-                            href={item === "en" ? "/" : "/?lang=sr"}
-                            className={`flex-1 text-center rounded-full py-2 text-sm font-medium transition-all duration-200 ${
-                                active
-                                    ? "bg-stone-900 text-white"
-                                    : "text-stone-600 hover:bg-stone-100 hover:text-stone-900"
-                            }`}
-                            aria-current={active ? "true" : undefined}
-                        >
-                          {languageLabels[item]}
-                        </Link>
+                      <Link
+                        key={`mobile-${item}`}
+                        href={item === "en" ? "/" : "/?lang=sr"}
+                        className="lang-toggle flex-1 rounded-full px-4 py-2.5 text-center text-sm font-medium"
+                        data-active={active ? "true" : "false"}
+                        aria-current={active ? "true" : undefined}
+                      >
+                        {languageLabels[item]}
+                      </Link>
                     );
                   })}
-                </div>                <a
+                </div>
+                <a
                   href={`mailto:${t.contactEmail}`}
-                  className="button-primary rounded-full px-5 py-3 text-center text-sm font-semibold sm:min-w-[13rem]"
+                  className="button-primary w-full rounded-full px-5 py-3 text-center text-sm font-semibold sm:min-w-[13rem]"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {t.cta}

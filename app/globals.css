@@ -155,6 +155,7 @@ button {
 .button-secondary,
 .lang-toggle,
 .mobile-menu-button {
+  -webkit-tap-highlight-color: transparent;
   transition:
     transform 180ms ease,
     background-color 180ms ease,
@@ -217,6 +218,11 @@ button {
   background: rgba(255, 255, 255, 0.01);
   color: #5f5a53;
   box-shadow: none;
+}
+
+.lang-toggle[data-active="false"]:active {
+  background: #efe4d8;
+  color: #1f1c18;
 }
 
 .lang-toggle:visited {

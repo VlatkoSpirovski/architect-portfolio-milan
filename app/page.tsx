@@ -986,7 +986,7 @@ export default function Home({
               </div>
 
               <a
-                href={`mailto:${t.contactEmail}`}
+                href={`tel:${t.contactPhoneHref}`}
                 className="button-primary rounded-full px-5 py-2 text-sm font-semibold"
               >
                 {t.cta}
@@ -1031,7 +1031,7 @@ export default function Home({
                   })}
                 </div>
                 <a
-                  href={`mailto:${t.contactEmail}`}
+                  href={`tel:${t.contactPhoneHref}`}
                   className="button-primary w-full rounded-full px-5 py-3 text-center text-sm font-semibold sm:min-w-[13rem]"
                   onClick={() => setMobileMenuOpen(false)}
                 >

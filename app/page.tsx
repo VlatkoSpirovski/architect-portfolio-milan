@@ -145,30 +145,30 @@ const content: Record<Locale, Content> = {
         title: "Private house",
         type: "Private Residence",
         year: "2024",
-        location: "Cacak, Serbia",
+        location: "Čačak, Serbia",
         description:
-          "A hillside residence organized around panoramic views, filtered sun exposure, and layered outdoor terraces.",
+          "Concept design for a family house with basement, ground floor, and first floor, with a total gross area of 287 m2.",
         imageSrc: "/images/kucaPrva/1.jpg",
       },
       {
         slug: "courtyard-house",
-        title: "Residential Complex",
-        type: "Residential Complex",
+        title: "Mixed-use Residential Building",
+        type: "Mixed-use Building",
         year: "2024",
-        location: "Zlatibor, Serbia",
+        location: "Užice, Serbia",
         description:
-          "An urban home centered on an internal courtyard that improves privacy, daylight, and indoor climate comfort.",
+          "Concept design for a mixed-use residential building with basement, semi-basement, ground floor, and three upper floors, with 15 apartments, two commercial units, and an underground garage with 8 parking spaces.",
         imageSrc: "/images/stambenaZgradaUzice/001.jpg",
       },
       {
         slug: "studio-terrace",
-        title: "Residential Complex",
-        type: "Residential Complex",
-        year: "2022",
+        title: "Residential Building",
+        type: "Residential Building",
+        year: "2025",
         location: "Zlatibor, Serbia",
         description:
-          "A residential apartment designed to extend the main living space toward the terrace and streamline circulation.",
-        imageSrc: "/images/stambenaZgradaZlatibor/1.jpg",
+          "Concept design for a multi-family residential building with 29 apartments, with a total gross area of 1,474 m2.",
+        imageSrc: "/images/stambenaZgradaZlatibor/Gemini_Generated_Image_38000w38000w3800.png",
       },
       {
         slug: "stambena-zgrada-zlatibor-1",
@@ -177,7 +177,7 @@ const content: Record<Locale, Content> = {
         year: "2022",
         location: "Zlatibor, Serbia",
         description:
-          "A facade-forward housing proposal exploring measured rhythms, depth, and balanced openings.",
+          "Concept design for a multi-family residential building with 34 apartments, with a total gross area of 1,704 m2.",
         imageSrc: "/images/stambenaZgradaZlatibor1/001.jpg",
       },
       {
@@ -187,7 +187,7 @@ const content: Record<Locale, Content> = {
         year: "2022",
         location: "Zlatibor, Serbia",
         description:
-          "A stronger urban corner expression paired with compact, efficient apartment organization.",
+          "Concept design for a multi-family residential building with 23 apartments, with a total gross area of 1,260 m2.",
         imageSrc: "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%281%29.jpg",
       },
       {
@@ -197,8 +197,88 @@ const content: Record<Locale, Content> = {
         year: "2022",
         location: "Zlatibor, Serbia",
         description:
-          "An iterative massing study focused on proportional facades, privacy control, and coherent street presence.",
+          "Concept design for a residential complex with two buildings, 69 apartments, and 29 parking spaces in the basement levels, with a total gross built area of 4,640 m2.",
         imageSrc: "/images/stambenaZgradaZlatibor3/001.jpg",
+      },
+      {
+        slug: "autocentar",
+        title: "Auto Center",
+        type: "Commercial Building",
+        year: "2025",
+        location: "Serbia",
+        description:
+          "Concept design for an auto center with basement, ground floor, and four upper floors.",
+        imageSrc: "/images/autocentar/fds.jpg",
+      },
+      {
+        slug: "porodicna-stambena-kuca-zlatibor",
+        title: "Multi-family Residential Building",
+        type: "Residential Building",
+        year: "2025",
+        location: "Zlatibor, Serbia",
+        description:
+          "Multi-family residential building with 12 apartments, with a total gross area of 596 m2.",
+        imageSrc: "/images/porodinastambenakua/Gemini_Generated_Image_9ro1tx9ro1tx9ro1.png",
+      },
+      {
+        slug: "sala-za-veselja-cacak",
+        title: "Event Hall and Accommodation",
+        type: "Hospitality Building",
+        year: "2025",
+        location: "Čačak, Serbia",
+        description:
+          "Concept design for a hospitality building with a 360-seat restaurant hall and an accommodation wing with 7 apartments, with a total gross area of 1,244 m2.",
+        imageSrc: "/images/salasaveselja/Gemini_Generated_Image_1llbzu1llbzu1llb.png",
+      },
+      {
+        slug: "porodicni-stambeni-objekat-zlatibor",
+        title: "Family Residential Building",
+        type: "Private Residence",
+        year: "2025",
+        location: "Zlatibor, Serbia",
+        description:
+          "Concept design for a family residential building with basement and ground floor, with a total area of 392 m2.",
+        imageSrc: "/images/porodinistambeniobjekat/Gemini_Generated_Image_xe2976xe2976xe29.png",
+      },
+      {
+        slug: "rekonstrukcija-stambenog-objekta-cacak",
+        title: "Residential Reconstruction",
+        type: "Reconstruction",
+        year: "2025",
+        location: "Čačak, Serbia",
+        description:
+          "Concept design for the reconstruction and extension of an existing residential building into two housing units and ground-floor commercial space, with a total gross built area of 428 m2.",
+        imageSrc: "/images/rekonstrukcijapostojeegstambenogobjekta/Gemini_Generated_Image_t9fp2tt9fp2tt9fp.png",
+      },
+      {
+        slug: "ugostiteljski-objekat-gornja-trepca",
+        title: "Hospitality Building",
+        type: "Hospitality Building",
+        year: "2025",
+        location: "Gornja Trepča, Čačak, Serbia",
+        description:
+          "Concept design for a hospitality building with 10 apartments and ground floor plus one upper floor.",
+        imageSrc: "/images/ugostiteljskiobjekat/Gemini_Generated_Image_by7m0uby7m0uby7m.png",
+      },
+      {
+        slug: "viseporodicni-stambeni-objekat-zlatibor",
+        title: "Multi-family Residential Building",
+        type: "Residential Building",
+        year: "2025",
+        location: "Zlatibor, Serbia",
+        description:
+          "Multi-family residential building with 12 apartments, with a total gross area of 596 m2.",
+        imageSrc: "/images/vieporodinistambeniobjekat/0-02-05-75fa95d6fecd3b17696c0112a1bf0730ffc0230afa2c8070d4e6fe5c9b0bd5e3_4cc78f7dd73b8fa8.jpg",
+      },
+      {
+        slug: "viseporodicni-stambeni-objekat-zlatibor-1",
+        title: "Multi-family Residential Building",
+        type: "Residential Building",
+        year: "2025",
+        location: "Zlatibor, Serbia",
+        description:
+          "Concept design for a multi-family residential building with 38 apartments, with a total gross area of 2,342 m2.",
+        imageSrc: "/images/vieporodinistambeniobjekat1/Gemini_Generated_Image_hve53ahve53ahve5.png",
       },
       {
         slug: "stambena-zgrada-zlatibor-4",
@@ -245,7 +325,7 @@ const content: Record<Locale, Content> = {
         title: "Private House",
         type: "Private Residence",
         year: "2025",
-        location: "Cacak, Serbia",
+        location: "Čačak, Serbia",
         description:
           "An urban residential scheme with clear floorplate logic and a facade system tuned to neighborhood scale.",
         imageSrc: "/images/stambenaZgradaCacak/ANTI%C4%86%2001.webp",
@@ -255,7 +335,7 @@ const content: Record<Locale, Content> = {
         title: "Private House",
         type: "Private Residence",
         year: "2025",
-        location: "Cacak, Serbia",
+        location: "Čačak, Serbia",
         description:
           "A contemporary house proposal combining compact planning, generous openings, and layered outdoor thresholds.",
         imageSrc: "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.webp",
@@ -265,7 +345,7 @@ const content: Record<Locale, Content> = {
         title: "Reconstruction of an Open-Air Pool",
         type: "Public Renovation",
         year: "2024",
-        location: "Lucani, Serbia",
+        location: "Lučani, Serbia",
         description:
           "Renovation and upgrade proposal for a pool complex with improved circulation, usability, and visual identity.",
         imageSrc:
@@ -310,15 +390,15 @@ const content: Record<Locale, Content> = {
     contactPhone: "+381 60 446 12 15",
     contactPhoneHref: "+381604461215",
     contactCityLabel: "Studio base",
-    contactCity: "Cacak / Belgrade",
+    contactCity: "Čačak / Belgrade",
     availabilityLabel: "Availability",
     availabilityText: "Open for new projects and early-stage consultations.",
     footer: "Milan Milojevic Architecture. Residential design and interior architecture.",
   },
   sr: {
     badge: "SR",
-    studioName: "Milan Milojevic Arhitektura",
-    cta: "Zakazi konsultacije",
+    studioName: "Milan Milojević Arhitektura",
+    cta: "Zakaži konsultacije",
     nav: [
       { href: "#about", label: "O studiju" },
       { href: "#services", label: "Usluge" },
@@ -326,9 +406,9 @@ const content: Record<Locale, Content> = {
       { href: "#contact", label: "Kontakt" },
     ],
     heroEyebrow: "Stambena arhitektura",
-    heroTitle: "Arhitektura definisana svetlom, proporcijom i komforom svakodnevnog zivota.",
+    heroTitle: "Arhitektura definisana svetlom, proporcijom i komforom svakodnevnog života.",
     heroText:
-      "Milan Milojevic projektuje privatne kuce i stambene koncepte u regionu, povezujuci savremen izraz sa funkcionalnim i dugorocno kvalitetnim prostorom.",
+      "Milan Milojević projektuje privatne kuće i stambene koncepte u regionu, povezujući savremen izraz sa funkcionalnim i dugoročno kvalitetnim prostorom.",
     featuredProjectLabel: "Izdvojeni projekat",
     featuredProjectCta: "Otvori galeriju",
     stats: [
@@ -336,15 +416,15 @@ const content: Record<Locale, Content> = {
       { value: "7", label: "godina rada na projektovanju i realizaciji" },
     ],
     note:
-      "Svaki projekat vodi licno Milan, od prvog razgovora do finalne dokumentacije, uz jasnu komunikaciju i preciznu kontrolu kvaliteta.",
+      "Svaki projekat vodi lično Milan, od prvog razgovora do finalne dokumentacije, uz jasnu komunikaciju i preciznu kontrolu kvaliteta.",
     aboutLabel: "O studiju",
-    aboutTitle: "Licna praksa sa visokim profesionalnim standardima.",
+    aboutTitle: "Lična praksa sa visokim profesionalnim standardima.",
     aboutText:
-      "Milan Milojevic radi na spoju arhitekture i svakodnevnog zivota. Projekti se razvijaju kroz pazljivu analizu lokacije, realno planiranje i odmjerenu materijalizaciju koja ostaje relevantna kroz vreme.",
+      "Milan Milojević radi na spoju arhitekture i svakodnevnog života. Projekti se razvijaju kroz pažljivu analizu lokacije, realno planiranje i odmerenu materijalizaciju koja ostaje relevantna kroz vreme.",
     aboutDetails: [
-      "Polazna tacka su uvek orijentacija, teren, susedni kontekst i navike korisnika prostora.",
-      "Odluke se proveravaju kroz jasnocu osnove, kvalitet dnevnog svetla i logicnu cirkulaciju.",
-      "Krajnji izraz ostaje miran i savremen, sa fokusom na kvalitet umesto vizuelnog preopterecenja.",
+      "Polazna tačka su uvek orijentacija, teren, susedni kontekst i navike korisnika prostora.",
+      "Odluke se proveravaju kroz jasnoću osnove, kvalitet dnevnog svetla i logičnu cirkulaciju.",
+      "Krajnji izraz ostaje miran i savremen, sa fokusom na kvalitet umesto vizuelnog preopterećenja.",
     ],
     servicesLabel: "Usluge",
     servicesTitle: "Od prvog koncepta do dokumentacije spremne za realizaciju.",
@@ -357,47 +437,47 @@ const content: Record<Locale, Content> = {
       {
         title: "Stambeno Projektovanje",
         description:
-          "Projektovanje kuca i manjih stambenih objekata sa fokusom na funkciju, atmosferu i dugotrajnu vrednost.",
+          "Projektovanje kuća i manjih stambenih objekata sa fokusom na funkciju, atmosferu i dugotrajnu vrednost.",
       },
       {
         title: "Enterijeri i Adaptacije",
         description:
-          "Precizno unapredjenje postojecih prostora kroz bolju organizaciju, vise svetla i uskladjene materijale.",
+          "Precizno unapređenje postojećih prostora kroz bolju organizaciju, više svetla i usklađene materijale.",
       },
     ],
     projectsLabel: "Odabrani radovi",
-    seeMoreProjects: "Prikazi jos projekata",
-    seeLessProjects: "Prikazi manje projekata",
+    seeMoreProjects: "Prikaži još projekata",
+    seeLessProjects: "Prikaži manje projekata",
     projects: [
       {
         slug: "villa-beti",
         title: "Privatna kuća",
         type: "Porodična kuća",
         year: "2024",
-        location: "Cacak, Srbija",
+        location: "Čačak, Srbija",
         description:
-          "Kuca na padini organizovana oko panoramskih vizura, kontrolisanog osuncanja i slojevitih terasa.",
+          "Idejno rešenje za porodični stambeni objekat spratnosti Po+P+1, ukupne bruto površine 287 m2.",
         imageSrc: "/images/kucaPrva/1.jpg",
       },
       {
         slug: "courtyard-house",
-        title: "Stambeni kompleks",
-        type: "Višeporodično stanovanje",
+        title: "Stambeno-poslovni objekat",
+        type: "Stambeno-poslovni objekat",
         year: "2023",
-        location: "Zlatibor, Srbija",
+        location: "Užice, Srbija",
         description:
-          "Gradska kuca sa centralnim dvoristem koje donosi vise privatnosti, prirodnog svetla i prijatniju mikroklimu.",
+          "Idejno rešenje za stambeno-poslovni objekat spratnosti Po+Su+P+3, ukupne bruto površine 1.767 m2, sa 15 stanova, dva poslovna prostora i podzemnom garažom sa 8 parking mesta.",
         imageSrc: "/images/stambenaZgradaUzice/001.jpg",
       },
       {
         slug: "studio-terrace",
-        title: "Stambeni kompleks",
+        title: "Stambena zgrada",
         type: "Višeporodično stanovanje",
         year: "2025",
         location: "Zlatibor, Srbija",
         description:
-          "Adaptacija stana koja otvara dnevnu zonu prema terasi i cini svakodnevno kretanje jednostavnijim.",
-        imageSrc: "/images/stambenaZgradaZlatibor/1.jpg",
+          "Idejno rešenje za višeporodični stambeni objekat sa 29 apartmana, spratnosti Su+P+4, ukupne bruto površine 1.474 m2.",
+        imageSrc: "/images/stambenaZgradaZlatibor/Gemini_Generated_Image_38000w38000w3800.png",
       },
       {
         slug: "stambena-zgrada-zlatibor-1",
@@ -406,7 +486,7 @@ const content: Record<Locale, Content> = {
         year: "2024",
         location: "Zlatibor, Srbija",
         description:
-          "Stambeni koncept sa naglaskom na ritam fasade, dubinu elemenata i uravnotezen raspored otvora.",
+          "Idejno rešenje za višeporodični stambeni objekat spratnosti Su+P+4, ukupne bruto površine 1.704 m2, sa 34 apartmana.",
         imageSrc: "/images/stambenaZgradaZlatibor1/001.jpg",
       },
       {
@@ -416,7 +496,7 @@ const content: Record<Locale, Content> = {
         year: "2023",
         location: "Zlatibor, Srbija",
         description:
-          "Koncept sa izrazajnijim uglom i efikasno organizovanim stambenim jedinicama.",
+          "Idejno rešenje za višeporodični stambeni objekat spratnosti Su+P+4, ukupne bruto površine 1.260 m2, sa 23 apartmana.",
         imageSrc: "/images/stambenaZgradaZlatibor2/Objekat%20Zlatibor%20%281%29.jpg",
       },
       {
@@ -426,8 +506,88 @@ const content: Record<Locale, Content> = {
         year: "2024",
         location: "Zlatibor, Srbija",
         description:
-          "Razrada volumena sa fokusom na proporcionalnu kompoziciju fasade i bolju kontrolu privatnosti.",
+          "Idejno rešenje za stambeni kompleks spratnosti Po+P+4+Pk i Po+P+5+Pk, ukupne bruto izgrađene površine 4.640 m2, sa 69 apartmana i 29 parking mesta u podrumskim etažama.",
         imageSrc: "/images/stambenaZgradaZlatibor3/001.jpg",
+      },
+      {
+        slug: "autocentar",
+        title: "Autocentar",
+        type: "Poslovni objekat",
+        year: "2025",
+        location: "Srbija",
+        description:
+          "Idejno rešenje za autocentar spratnosti Po+P+4.",
+        imageSrc: "/images/autocentar/fds.jpg",
+      },
+      {
+        slug: "porodicna-stambena-kuca-zlatibor",
+        title: "Višeporodični stambeni objekat",
+        type: "Višeporodično stanovanje",
+        year: "2025",
+        location: "Zlatibor, Srbija",
+        description:
+          "Višeporodični stambeni objekat spratnosti P+3 sa 12 apartmana, ukupne bruto površine 596 m2.",
+        imageSrc: "/images/porodinastambenakua/Gemini_Generated_Image_9ro1tx9ro1tx9ro1.png",
+      },
+      {
+        slug: "sala-za-veselja-cacak",
+        title: "Sala za veselja",
+        type: "Ugostiteljski objekat",
+        year: "2025",
+        location: "Čačak, Srbija",
+        description:
+          "Idejno rešenje za ugostiteljski objekat sa restoranskom salom kapaciteta 360 mesta i smeštajnim delom sa 7 apartmana, spratnosti P+1, ukupne bruto površine 1.244 m2.",
+        imageSrc: "/images/salasaveselja/Gemini_Generated_Image_1llbzu1llbzu1llb.png",
+      },
+      {
+        slug: "porodicni-stambeni-objekat-zlatibor",
+        title: "Porodični stambeni objekat",
+        type: "Porodična kuća",
+        year: "2025",
+        location: "Zlatibor, Srbija",
+        description:
+          "Idejno rešenje porodičnog stambenog objekta spratnosti Po+P, ukupne površine 392 m2.",
+        imageSrc: "/images/porodinistambeniobjekat/Gemini_Generated_Image_xe2976xe2976xe29.png",
+      },
+      {
+        slug: "rekonstrukcija-stambenog-objekta-cacak",
+        title: "Rekonstrukcija stambenog objekta",
+        type: "Rekonstrukcija",
+        year: "2025",
+        location: "Čačak, Srbija",
+        description:
+          "Idejno rešenje rekonstrukcije i dogradnje postojećeg stambenog objekta, postojeće spratnosti P+1+Pk i buduće spratnosti P+2, sa dve stambene jedinice i poslovnim prostorom u prizemlju. Ukupna bruto izgrađena površina je 428 m2.",
+        imageSrc: "/images/rekonstrukcijapostojeegstambenogobjekta/Gemini_Generated_Image_t9fp2tt9fp2tt9fp.png",
+      },
+      {
+        slug: "ugostiteljski-objekat-gornja-trepca",
+        title: "Ugostiteljski objekat",
+        type: "Ugostiteljski objekat",
+        year: "2025",
+        location: "Gornja Trepča, Čačak, Srbija",
+        description:
+          "Idejno rešenje za ugostiteljski objekat sa 10 apartmana, spratnosti P+1.",
+        imageSrc: "/images/ugostiteljskiobjekat/Gemini_Generated_Image_by7m0uby7m0uby7m.png",
+      },
+      {
+        slug: "viseporodicni-stambeni-objekat-zlatibor",
+        title: "Višeporodični stambeni objekat",
+        type: "Višeporodično stanovanje",
+        year: "2025",
+        location: "Zlatibor, Srbija",
+        description:
+          "Višeporodični stambeni objekat spratnosti P+3 sa 12 apartmana, ukupne bruto površine 596 m2.",
+        imageSrc: "/images/vieporodinistambeniobjekat/0-02-05-75fa95d6fecd3b17696c0112a1bf0730ffc0230afa2c8070d4e6fe5c9b0bd5e3_4cc78f7dd73b8fa8.jpg",
+      },
+      {
+        slug: "viseporodicni-stambeni-objekat-zlatibor-1",
+        title: "Višeporodični stambeni objekat",
+        type: "Višeporodično stanovanje",
+        year: "2025",
+        location: "Zlatibor, Srbija",
+        description:
+          "Idejno rešenje za višeporodični stambeni objekat spratnosti Su+P+4+Pk, ukupne bruto površine 2.342 m2, sa 38 apartmana.",
+        imageSrc: "/images/vieporodinistambeniobjekat1/Gemini_Generated_Image_hve53ahve53ahve5.png",
       },
       {
         slug: "stambena-zgrada-zlatibor-4",
@@ -446,7 +606,7 @@ const content: Record<Locale, Content> = {
         year: "2025",
         location: "Zlatibor, Srbija",
         description:
-          "Nova studija fasade sa jacim ritmom, izrazajnijom teksturom i vecim otvorima za savremeni planinski kontekst.",
+          "Nova studija fasade sa jačim ritmom, izražajnijom teksturom i većim otvorima za savremeni planinski kontekst.",
         imageSrc: "/images/StambenaZgradaZlatibor5/Gemini_Generated_Image_81at2m81at2m81at.webp",
       },
       {
@@ -456,7 +616,7 @@ const content: Record<Locale, Content> = {
         year: "2025",
         location: "Zlatibor, Srbija",
         description:
-          "Koncept vile oblikovan kroz prostranije spoljne zone i snazniju vezu enterijera sa pejzazom.",
+          "Koncept vile oblikovan kroz prostranije spoljne zone i snažniju vezu enterijera sa pejzažom.",
         imageSrc: "/images/vilaZlatibor/Gemini_Generated_Image_865ny1865ny1865n.webp",
       },
       {
@@ -466,7 +626,7 @@ const content: Record<Locale, Content> = {
         year: "2025",
         location: "Gornji Milanovac, Srbija",
         description:
-          "Viseporodicni koncept sa racionalnom organizacijom stanova, kvalitetnim osvetljenjem i uravnotezenim fasadnim izrazom.",
+          "Višeporodični koncept sa racionalnom organizacijom stanova, kvalitetnim osvetljenjem i uravnoteženim fasadnim izrazom.",
         imageSrc: "/images/stambeniObjektGorniMilanovac/Gemini_Generated_Image_2bl1y22bl1y22bl1.webp",
       },
       {
@@ -474,9 +634,9 @@ const content: Record<Locale, Content> = {
         title: "Privatna kuća",
         type: "Porodična kuća",
         year: "2025",
-        location: "Cacak, Srbija",
+        location: "Čačak, Srbija",
         description:
-          "Urbani stambeni koncept sa jasnom logikom osnove i fasadnim sistemom prilagodjenim merilu okoline.",
+          "Urbani stambeni koncept sa jasnom logikom osnove i fasadnim sistemom prilagođenim merilu okoline.",
         imageSrc: "/images/stambenaZgradaCacak/ANTI%C4%86%2001.webp",
       },
       {
@@ -484,32 +644,32 @@ const content: Record<Locale, Content> = {
         title: "Privatna kuća",
         type: "Porodična kuća",
         year: "2025",
-        location: "Cacak, Srbija",
+        location: "Čačak, Srbija",
         description:
-          "Savremeni predlog kuce koji spaja kompaktnu organizaciju, velike otvore i slojevito oblikovane spoljne prelaze.",
+          "Savremeni predlog kuće koji spaja kompaktnu organizaciju, velike otvore i slojevito oblikovane spoljne prelaze.",
         imageSrc: "/images/stambenaKucaCacak/Gemini_Generated_Image_9hmmdn9hmmdn9hmm.webp",
       },
       {
         slug: "rekonstrukcija-bazena-lucani",
-        title: "Rekonstrukcija bazena Lucani",
+        title: "Rekonstrukcija bazena Lučani",
         type: "Javna rekonstrukcija",
         year: "2024",
-        location: "Lucani, Srbija",
+        location: "Lučani, Srbija",
         description:
-          "Predlog rekonstrukcije bazenskog kompleksa sa unapredjenom funkcijom, jasnijim kretanjem i osvezenim vizuelnim identitetom.",
+          "Predlog rekonstrukcije bazenskog kompleksa sa unapređenom funkcijom, jasnijim kretanjem i osveženim vizuelnim identitetom.",
         imageSrc:
           "/images/rekonstrukcijaBazenaLucani/0-02-05-1811798fd8d5d069dd70f877e60c7ec9fa6c2f011c273f47229f10a90ffd936f_51e1b7a5ced5fcb9.jpg",
       },
     ],
     openProjectLabel: "Otvori galeriju",
     processLabel: "Proces",
-    processTitle: "Disciplinisan tok rada od zadatka do tehnicke dokumentacije.",
+    processTitle: "Disciplinisan tok rada od zadatka do tehničke dokumentacije.",
     processSteps: [
       {
         number: "01",
         title: "Program i Kontekst",
         description:
-          "Uskladjivanje funkcionalnih zahteva sa lokacijom, regulativom i budzetskim okvirima.",
+          "Usklađivanje funkcionalnih zahteva sa lokacijom, regulativom i budžetskim okvirima.",
       },
       {
         number: "02",
@@ -521,28 +681,28 @@ const content: Record<Locale, Content> = {
         number: "03",
         title: "Dokumentacija i Koordinacija",
         description:
-          "Izrada preciznih tehnickih crteza i podrska komunikaciji tokom pripreme i realizacije projekta.",
+          "Izrada preciznih tehničkih crteža i podrška komunikaciji tokom pripreme i realizacije projekta.",
       },
     ],
     approachLabel: "Pristup",
-    approachTitle: "Jasne odluke, bez suvisnih elemenata, sa trajnim kvalitetom.",
+    approachTitle: "Jasne odluke, bez suvišnih elemenata, sa trajnim kvalitetom.",
     principles: [
-      "Kontekst je osnova: orijentacija, teren, pogledi i svakodnevni ritam korisnika definisu okvir projekta.",
-      "Forma i materijalizacija ostaju odmjerene kako bi arhitektura trajala i van trendova.",
+      "Kontekst je osnova: orijentacija, teren, pogledi i svakodnevni ritam korisnika definišu okvir projekta.",
+      "Forma i materijalizacija ostaju odmerene kako bi arhitektura trajala i van trendova.",
       "Komunikacija sa klijentom je direktna i kontinualna, uz manje neizvesnosti u svakoj fazi rada.",
     ],
     contactLabel: "Kontakt",
-    contactTitle: "Planirate novu kucu, adaptaciju ili stambeni koncept?",
+    contactTitle: "Planirate novu kuću, adaptaciju ili stambeni koncept?",
     contactText:
-      "Posaljite lokaciju, obim projekta i planirani rok. Uvodne konsultacije sluze da se definisu prioriteti, obim dokumentacije i sledeci koraci.",
-    contactEmail: "@milanmilojevic982@gmail.com",
+      "Pošaljite lokaciju, obim projekta i planirani rok. Uvodne konsultacije služe da se definišu prioriteti, obim dokumentacije i sledeći koraci.",
+    contactEmail: "milanmilojevic982@gmail.com",
     contactPhone: "+381 60 446 12 15",
     contactPhoneHref: "+381604461215",
     contactCityLabel: "Baza studija",
-    contactCity: "Cacak / Beograd",
+    contactCity: "Čačak / Beograd",
     availabilityLabel: "Dostupnost",
     availabilityText: "Otvoren za nove projekte i koncept konsultacije.",
-    footer: "Milan Milojevic Arhitektura. Stambeni projekti i enterijerska arhitektura.",
+    footer: "Milan Milojević Arhitektura. Stambeni projekti i enterijerska arhitektura.",
   },
 };
 
@@ -568,12 +728,10 @@ const projectGalleryBySlug: Record<string, string[]> = {
     "/images/stambenaZgradaUzice/004.jpg",
   ],
   "studio-terrace": [
-    "/images/stambenaZgradaZlatibor/1.jpg",
-    "/images/stambenaZgradaZlatibor/2.jpg",
-    "/images/stambenaZgradaZlatibor/3.jpg",
-    "/images/stambenaZgradaZlatibor/4.jpg",
-    "/images/stambenaZgradaZlatibor/5.jpg",
-    "/images/stambenaZgradaZlatibor/6.jpg",
+    "/images/stambenaZgradaZlatibor/Gemini_Generated_Image_38000w38000w3800.png",
+    "/images/stambenaZgradaZlatibor/Gemini_Generated_Image_4flw734flw734flw.png",
+    "/images/stambenaZgradaZlatibor/Gemini_Generated_Image_8qtbj38qtbj38qtb.png",
+    "/images/stambenaZgradaZlatibor/Gemini_Generated_Image_fmv4ahfmv4ahfmv4.png",
   ],
   "stambena-zgrada-zlatibor-1": [
     "/images/stambenaZgradaZlatibor1/001.jpg",
@@ -597,6 +755,59 @@ const projectGalleryBySlug: Record<string, string[]> = {
     "/images/stambenaZgradaZlatibor3/003.jpg",
     "/images/stambenaZgradaZlatibor3/004.jpg",
     "/images/stambenaZgradaZlatibor3/005.jpg",
+  ],
+  autocentar: [
+    "/images/autocentar/fds.jpg",
+    "/images/autocentar/fdsfds.jpg",
+    "/images/autocentar/pan%201.jpg",
+    "/images/autocentar/pan%202.jpg",
+  ],
+  "porodicna-stambena-kuca-zlatibor": [
+    "/images/porodinastambenakua/Gemini_Generated_Image_9ro1tx9ro1tx9ro1.png",
+    "/images/porodinastambenakua/Gemini_Generated_Image_36pis936pis936pi.png",
+    "/images/porodinastambenakua/Gemini_Generated_Image_ah1wz1ah1wz1ah1w.png",
+    "/images/porodinastambenakua/Gemini_Generated_Image_pxletupxletupxle.png",
+  ],
+  "sala-za-veselja-cacak": [
+    "/images/salasaveselja/Gemini_Generated_Image_1llbzu1llbzu1llb.png",
+    "/images/salasaveselja/Gemini_Generated_Image_5ayipp5ayipp5ayi.png",
+    "/images/salasaveselja/Gemini_Generated_Image_9oyn2p9oyn2p9oyn.png",
+    "/images/salasaveselja/Gemini_Generated_Image_pe29g5pe29g5pe29.png",
+    "/images/salasaveselja/Gemini_Generated_Image_pme1ldpme1ldpme1.png",
+  ],
+  "porodicni-stambeni-objekat-zlatibor": [
+    "/images/porodinistambeniobjekat/Gemini_Generated_Image_xe2976xe2976xe29.png",
+    "/images/porodinistambeniobjekat/Gemini_Generated_Image_9np58l9np58l9np5.png",
+    "/images/porodinistambeniobjekat/Gemini_Generated_Image_hfodmyhfodmyhfod.png",
+    "/images/porodinistambeniobjekat/Gemini_Generated_Image_jv69lmjv69lmjv69.png",
+    "/images/porodinistambeniobjekat/Gemini_Generated_Image_w7163ow7163ow716.png",
+  ],
+  "rekonstrukcija-stambenog-objekta-cacak": [
+    "/images/rekonstrukcijapostojeegstambenogobjekta/Gemini_Generated_Image_t9fp2tt9fp2tt9fp.png",
+    "/images/rekonstrukcijapostojeegstambenogobjekta/Gemini_Generated_Image_50qky850qky850qk.png",
+    "/images/rekonstrukcijapostojeegstambenogobjekta/Gemini_Generated_Image_6b6sbx6b6sbx6b6s.png",
+    "/images/rekonstrukcijapostojeegstambenogobjekta/Gemini_Generated_Image_i7vat0i7vat0i7va.png",
+    "/images/rekonstrukcijapostojeegstambenogobjekta/Gemini_Generated_Image_vdtkanvdtkanvdtk.png",
+  ],
+  "ugostiteljski-objekat-gornja-trepca": [
+    "/images/ugostiteljskiobjekat/Gemini_Generated_Image_by7m0uby7m0uby7m.png",
+    "/images/ugostiteljskiobjekat/Gemini_Generated_Image_d3pn9nd3pn9nd3pn.png",
+    "/images/ugostiteljskiobjekat/Gemini_Generated_Image_em6mk5em6mk5em6m.png",
+    "/images/ugostiteljskiobjekat/Gemini_Generated_Image_odiqz2odiqz2odiq.png",
+    "/images/ugostiteljskiobjekat/Gemini_Generated_Image_yqsu71yqsu71yqsu.png",
+  ],
+  "viseporodicni-stambeni-objekat-zlatibor": [
+    "/images/vieporodinistambeniobjekat/0-02-05-75fa95d6fecd3b17696c0112a1bf0730ffc0230afa2c8070d4e6fe5c9b0bd5e3_4cc78f7dd73b8fa8.jpg",
+    "/images/vieporodinistambeniobjekat/0-02-05-267f425a9f0fea8a0bb5930ee4224df4629fec329e9901e86d1d22cec4ffd726_441f928ab9e1cac.jpg",
+    "/images/vieporodinistambeniobjekat/0-02-05-4c2dac8da5c789fbeb72a3f985575471f23b2222df52c519409e147ac5a2ab3e_e95baf39c3a01295.jpg",
+    "/images/vieporodinistambeniobjekat/0-02-05-6a06f147488e12784606be6f58db0a611c04eb7ccb562dec9fe6c35afcc2e3bf_de0b02a581aef809.jpg",
+  ],
+  "viseporodicni-stambeni-objekat-zlatibor-1": [
+    "/images/vieporodinistambeniobjekat1/Gemini_Generated_Image_hve53ahve53ahve5.png",
+    "/images/vieporodinistambeniobjekat1/Gemini_Generated_Image_qwws9lqwws9lqwws.png",
+    "/images/vieporodinistambeniobjekat1/Gemini_Generated_Image_s1shyus1shyus1sh.png",
+    "/images/vieporodinistambeniobjekat1/Gemini_Generated_Image_usrgnausrgnausrg.png",
+    "/images/vieporodinistambeniobjekat1/Gemini_Generated_Image_w4uajgw4uajgw4ua.png",
   ],
   "stambena-zgrada-zlatibor-4": [
     "/images/stambenaZgradaZlatibor4/ZLATIBOR%2000.webp",
@@ -660,7 +871,7 @@ const projectGalleryBySlug: Record<string, string[]> = {
 
 function parseLocale(value: string | string[] | undefined): Locale {
   const normalized = Array.isArray(value) ? value[0] : value;
-  return normalized === "sr" ? "sr" : "en";
+  return normalized === "en" ? "en" : "sr";
 }
 
 export default function Home({
@@ -763,7 +974,7 @@ export default function Home({
                   return (
                     <Link
                       key={item}
-                      href={item === "en" ? "/" : "/?lang=sr"}
+                      href={item === "en" ? "/?lang=en" : "/"}
                       className="lang-toggle rounded-full px-4 py-2 text-sm font-semibold"
                       data-active={active ? "true" : "false"}
                       aria-current={active ? "true" : undefined}
@@ -809,7 +1020,7 @@ export default function Home({
                     return (
                       <Link
                         key={`mobile-${item}`}
-                        href={item === "en" ? "/" : "/?lang=sr"}
+                        href={item === "en" ? "/?lang=en" : "/"}
                         className="lang-toggle flex-1 rounded-full px-4 py-2.5 text-center text-sm font-medium"
                         data-active={active ? "true" : "false"}
                         aria-current={active ? "true" : undefined}
@@ -1135,7 +1346,7 @@ export default function Home({
                           onClick={() => setActiveImageIndex(index)}
                           className="gallery-thumbnail relative min-h-[76px] overflow-hidden rounded-xl"
                           data-active={isActive ? "true" : "false"}
-                          aria-label={`${locale === "sr" ? "Prikazi sliku" : "Show image"} ${index + 1}`}
+                          aria-label={`${locale === "sr" ? "Prikaži sliku" : "Show image"} ${index + 1}`}
                         >
                           <Image
                             src={imageSrc}
@@ -1173,7 +1384,7 @@ export default function Home({
                   onClick={() => setActiveImageIndex((prev) => prev + 1)}
                   className="gallery-nav-button rounded-full px-7 py-3 text-sm font-semibold"
                 >
-                  <span>{locale === "sr" ? "Sledeca" : "Next"}</span>
+                  <span>{locale === "sr" ? "Sledeća" : "Next"}</span>
                 </button>
               </div>
             </div>
